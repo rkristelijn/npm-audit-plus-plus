@@ -4,8 +4,8 @@ This is a tool to help report `npm audit` in xml format for e.g. CI/CD for gitla
 
 ```
 npm audit | npx npm-audit-plus-plus > npm-audit-plus-plus.xml
-npm audit --production | npx npm-audit-plus-plus > npm-audit-plus-plus.xml
-npm audit --omit=dev | npx npm-audit-plus-plus > npm-audit-plus-plus.xml
+npm audit --production --json | npx npm-audit-plus-plus > npm-audit-plus-plus.xml
+npm audit --omit=dev --json | npx npm-audit-plus-plus > npm-audit-plus-plus.xml
 ```
 
 The tool is similar to [`npm-audit-plus`](https://github.com/freedomofpress/npm-audit-plus) but splits `npm audit` execution to be able to run `npm audit` with custom arguments.
