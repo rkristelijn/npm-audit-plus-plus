@@ -4,13 +4,13 @@
   "description": "A tool to capture the output of npm audit and convert it to xml",
   "main": "src/cli.cjs",
   "bin": {
-    "npm-audit-plus-plus": "dist/cli.js"
+    "npm-audit-plus-plus": "src/cli.cjs"
   },
   "scripts": {
-    "test": "cat fixtures/audit.json | node dist/cli.js",
-    "test-ok": "cat fixtures/audit-ok.json | node dist/cli.js",
-    "test-critical": "cat fixtures/audit-criticals.json | node dist/cli.js",
-    "start": "node src/cli.js",
+    "test": "cat fixtures/audit.json | node src/cli.cjs",
+    "test-ok": "cat fixtures/audit-ok.json | node src/cli.cjs",
+    "test-critical": "cat fixtures/audit-criticals.json | node src/cli.cjs",
+    "start": "node src/cli.cjs",
     "build": "babel src/cli.cjs --out-file dist/cli.js"
   },
   "keywords": [
