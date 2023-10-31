@@ -2,16 +2,16 @@
   "name": "npm-audit-plus-plus",
   "version": "1.0.2",
   "description": "A tool to capture the output of npm audit and convert it to xml",
-  "main": "dist/cli.js",
+  "main": "src/cli.cjs",
   "bin": {
     "npm-audit-plus-plus": "dist/cli.js"
   },
   "scripts": {
-    "test": "cat fixtures/audit.json | node src/cli.js",
-    "test-ok": "cat fixtures/audit-ok.json | node src/cli.js",
-    "test-critical": "cat fixtures/audit-criticals.json | node src/cli.js",
+    "test": "cat fixtures/audit.json | node dist/cli.js",
+    "test-ok": "cat fixtures/audit-ok.json | node dist/cli.js",
+    "test-critical": "cat fixtures/audit-criticals.json | node dist/cli.js",
     "start": "node src/cli.js",
-    "build": "babel src/cli.js --out-file dist/cli.js"
+    "build": "babel src/cli.cjs --out-file dist/cli.js"
   },
   "keywords": [
     "npm",

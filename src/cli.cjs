@@ -26,7 +26,7 @@ program
 
     // when input ends, parse the file
     process.stdin.on("end", () => {
-      const input = "";
+      let input = "";
       try {
         input = JSON.parse(rawInput);
       } catch (e) {

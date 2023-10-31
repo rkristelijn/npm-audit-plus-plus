@@ -1,6 +1,5 @@
 "use strict";
 
-function _readOnlyError(name) { throw new TypeError("\"" + name + "\" is read-only"); }
 var _require = require("commander"),
   Command = _require.Command;
 var program = new Command();
@@ -23,7 +22,7 @@ program.description("npm audit --json | npx npm-audit-plus-plus").option("--debu
   process.stdin.on("end", function () {
     var input = "";
     try {
-      JSON.parse(rawInput), _readOnlyError("input");
+      input = JSON.parse(rawInput);
     } catch (e) {
       console.log("Error parsing JSON input");
       console.log(e);
