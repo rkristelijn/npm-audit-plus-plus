@@ -1,0 +1,2828 @@
+{
+  "actions": [
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1088227,
+          "path": "@angular-devkit/build-angular>webpack-dev-server>selfsigned>node-forge",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1088229,
+          "path": "@angular-devkit/build-angular>webpack-dev-server>selfsigned>node-forge",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1088746,
+          "path": "@angular-devkit/build-angular>webpack-dev-server>selfsigned>node-forge",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1091181,
+          "path": "@angular-devkit/build-angular>webpack>watchpack>watchpack-chokidar2>chokidar>glob-parent",
+          "dev": true,
+          "optional": true,
+          "bundled": false
+        },
+        {
+          "id": 1091181,
+          "path": "@angular-devkit/build-angular>webpack-dev-server>chokidar>glob-parent",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1091350,
+          "path": "@angular-devkit/build-angular>webpack-dev-server>selfsigned>node-forge",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1091351,
+          "path": "@angular-devkit/build-angular>webpack-dev-server>selfsigned>node-forge",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1091690,
+          "path": "@angular-devkit/build-angular>terser",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1091691,
+          "path": "@angular-devkit/build-angular>webpack>terser-webpack-plugin>terser",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1092999,
+          "path": "@angular-devkit/build-angular>@angular-devkit/build-optimizer>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1092999,
+          "path": "@angular-devkit/build-angular>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093000,
+          "path": "@angular-devkit/build-angular>babel-loader>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093000,
+          "path": "@angular-devkit/build-angular>webpack>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093000,
+          "path": "@angular-devkit/build-angular>worker-plugin>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093262,
+          "path": "@angular-devkit/build-angular>webpack-dev-server>internal-ip>default-gateway>execa>cross-spawn>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093262,
+          "path": "@angular-devkit/build-angular>webpack>terser-webpack-plugin>find-cache-dir>make-dir>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "@angular-devkit/build-angular>@babel/preset-env>@babel/plugin-proposal-object-rest-spread>@babel/helper-compilation-targets>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "@angular-devkit/build-angular>@jsdevtools/coverage-istanbul-loader>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "@angular-devkit/build-angular>@jsdevtools/coverage-istanbul-loader>istanbul-lib-instrument>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "@angular-devkit/build-angular>find-cache-dir>make-dir>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "@angular-devkit/build-angular>babel-loader>find-cache-dir>make-dir>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "@angular-devkit/build-angular>stylus>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "@angular-devkit/build-angular>webpack-dev-server>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093264,
+          "path": "@angular-devkit/build-angular>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093719,
+          "path": "@angular-devkit/build-angular>webpack-dev-server>selfsigned>node-forge",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094009,
+          "path": "@angular-devkit/build-angular>minimatch",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094083,
+          "path": "@angular-devkit/build-angular>@angular-devkit/build-optimizer>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094083,
+          "path": "@angular-devkit/build-angular>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094084,
+          "path": "@angular-devkit/build-angular>babel-loader>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094084,
+          "path": "@angular-devkit/build-angular>webpack>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094084,
+          "path": "@angular-devkit/build-angular>worker-plugin>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094087,
+          "path": "@angular-devkit/build-angular>stylus>css-parse>css>source-map-resolve>decode-uri-component",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094087,
+          "path": "@angular-devkit/build-angular>webpack>micromatch>braces>snapdragon>source-map-resolve>decode-uri-component",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094087,
+          "path": "@angular-devkit/build-angular>webpack>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094087,
+          "path": "@angular-devkit/build-angular>webpack-dev-server>http-proxy-middleware>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094087,
+          "path": "@angular-devkit/build-angular>webpack-dev-server>chokidar>anymatch>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094087,
+          "path": "@angular-devkit/build-angular>webpack>watchpack>watchpack-chokidar2>chokidar>anymatch>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+          "dev": true,
+          "optional": true,
+          "bundled": false
+        },
+        {
+          "id": 1094088,
+          "path": "@angular-devkit/build-angular>babel-loader>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094088,
+          "path": "@angular-devkit/build-angular>webpack>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094088,
+          "path": "@angular-devkit/build-angular>worker-plugin>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094089,
+          "path": "@angular-devkit/build-angular>@angular-devkit/build-optimizer>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094089,
+          "path": "@angular-devkit/build-angular>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094304,
+          "path": "@angular-devkit/build-angular>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094304,
+          "path": "@angular-devkit/build-angular>resolve-url-loader>postcss",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "@angular-devkit/build-angular",
+      "target": "16.2.8"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1089434,
+          "path": "jsonwebtoken",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1091087,
+          "path": "jsonwebtoken",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1092549,
+          "path": "jsonwebtoken",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093262,
+          "path": "jsonwebtoken>semver",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "jsonwebtoken",
+      "target": "9.0.2"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1091181,
+          "path": "webpack>watchpack>watchpack-chokidar2>chokidar>glob-parent",
+          "dev": true,
+          "optional": true,
+          "bundled": false
+        },
+        {
+          "id": 1091691,
+          "path": "webpack>terser-webpack-plugin>terser",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093000,
+          "path": "webpack>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093262,
+          "path": "webpack>terser-webpack-plugin>find-cache-dir>make-dir>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094084,
+          "path": "webpack>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094087,
+          "path": "webpack>micromatch>snapdragon>source-map-resolve>decode-uri-component",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094087,
+          "path": "webpack>watchpack>watchpack-chokidar2>chokidar>anymatch>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+          "dev": true,
+          "optional": true,
+          "bundled": false
+        },
+        {
+          "id": 1094088,
+          "path": "webpack>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "webpack",
+      "target": "5.89.0"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1092430,
+          "path": "cypress-mochawesome-reporter>mochawesome-report-generator>validator",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1092430,
+          "path": "cypress-mochawesome-reporter>mochawesome>mochawesome-report-generator>validator",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "cypress-mochawesome-reporter",
+      "target": "3.6.1"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1092470,
+          "path": "cypress>@cypress/request>tough-cookie",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1092971,
+          "path": "cypress>@cypress/request",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "cypress",
+      "target": "13.4.0"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1092470,
+          "path": "@angular/cli>universal-analytics>request>tough-cookie",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1092470,
+          "path": "@angular/cli>pacote>@npmcli/run-script>node-gyp>request>tough-cookie",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1092470,
+          "path": "@angular/cli>@schematics/update>pacote>@npmcli/run-script>node-gyp>request>tough-cookie",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093264,
+          "path": "@angular/cli>@schematics/update>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093264,
+          "path": "@angular/cli>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "@angular/cli",
+      "target": "16.2.8"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1093000,
+          "path": "ts-loader>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "ts-loader>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094084,
+          "path": "ts-loader>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094088,
+          "path": "ts-loader>loader-utils",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "ts-loader",
+      "target": "9.5.0"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1093262,
+          "path": "jest>@jest/core>@jest/transform>jest-haste-map>sane>execa>cross-spawn>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093262,
+          "path": "jest>@jest/core>@jest/reporters>@jest/transform>jest-haste-map>sane>execa>cross-spawn>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093262,
+          "path": "jest>jest-cli>@jest/core>@jest/reporters>@jest/transform>jest-haste-map>sane>execa>cross-spawn>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093262,
+          "path": "jest>jest-cli>@jest/core>jest-runner>jest-config>@jest/test-sequencer>jest-haste-map>sane>execa>cross-spawn>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093262,
+          "path": "jest>jest-cli>@jest/core>jest-runner>jest-runtime>jest-config>@jest/test-sequencer>jest-haste-map>sane>execa>cross-spawn>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093262,
+          "path": "jest>@jest/core>jest-runner>jest-config>jest-jasmine2>jest-runtime>jest-config>@jest/test-sequencer>jest-haste-map>sane>execa>cross-spawn>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093262,
+          "path": "jest>jest-cli>@jest/core>jest-runner>jest-config>jest-jasmine2>jest-runtime>jest-config>@jest/test-sequencer>jest-haste-map>sane>execa>cross-spawn>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093262,
+          "path": "jest>jest-cli>@jest/core>jest-runner>jest-config>jest-jasmine2>jest-runtime>jest-config>babel-jest>@jest/transform>jest-haste-map>sane>execa>cross-spawn>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>@jest/core>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>jest-cli>@jest/core>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>jest-cli>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>jest-cli>@jest/core>jest-runner>jest-config>@jest/test-sequencer>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>@jest/test-sequencer>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>jest-cli>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>@jest/test-sequencer>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>@jest/core>@jest/reporters>istanbul-lib-instrument>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>jest-cli>@jest/core>@jest/reporters>istanbul-lib-instrument>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>@jest/core>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>jest-cli>@jest/core>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>jest-cli>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>jest-cli>@jest/core>jest-runner>jest-config>@jest/test-sequencer>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>@jest/test-sequencer>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>jest-cli>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>@jest/test-sequencer>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094087,
+          "path": "jest>@jest/core>@jest/reporters>@jest/transform>jest-haste-map>sane>anymatch>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094087,
+          "path": "jest>jest-cli>@jest/core>@jest/reporters>@jest/transform>jest-haste-map>sane>anymatch>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094087,
+          "path": "jest>jest-cli>@jest/core>jest-runner>jest-config>@jest/test-sequencer>jest-haste-map>sane>anymatch>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094087,
+          "path": "jest>jest-cli>@jest/core>jest-runner>jest-runtime>jest-config>@jest/test-sequencer>jest-haste-map>sane>anymatch>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094087,
+          "path": "jest>@jest/core>jest-runner>jest-config>jest-jasmine2>jest-runtime>jest-config>@jest/test-sequencer>jest-haste-map>sane>anymatch>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094087,
+          "path": "jest>jest-cli>@jest/core>jest-runner>jest-config>jest-jasmine2>jest-runtime>jest-config>@jest/test-sequencer>jest-haste-map>sane>anymatch>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094087,
+          "path": "jest>jest-cli>@jest/core>jest-runner>jest-config>jest-jasmine2>jest-runtime>jest-config>babel-jest>@jest/transform>jest-haste-map>sane>anymatch>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "jest",
+      "target": "29.7.0"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1093263,
+          "path": "babel-loader>make-dir>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "babel-loader",
+      "target": "9.1.3"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1093263,
+          "path": "@angular/compiler-cli>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "@angular/compiler-cli",
+      "target": "16.2.11"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1093264,
+          "path": "commitlint>@commitlint/cli>@commitlint/lint>@commitlint/is-ignored>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "commitlint",
+      "target": "18.2.0"
+    },
+    {
+      "action": "update",
+      "resolves": [
+        {
+          "id": 1093263,
+          "path": "jest>@jest/core>@jest/reporters>istanbul-lib-report>make-dir>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>jest-cli>@jest/core>@jest/reporters>istanbul-lib-report>make-dir>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "istanbul-lib-report",
+      "target": "3.0.1",
+      "depth": 5
+    },
+    {
+      "action": "update",
+      "resolves": [
+        {
+          "id": 1093263,
+          "path": "jest>jest-cli>@jest/core>@jest/reporters>istanbul-reports>istanbul-lib-report>make-dir>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "istanbul-reports",
+      "target": "3.1.6",
+      "depth": 5
+    },
+    {
+      "action": "update",
+      "resolves": [
+        {
+          "id": 1093264,
+          "path": "jest>@jest/core>jest-snapshot>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093264,
+          "path": "jest>@jest/core>@jest/reporters>node-notifier>semver",
+          "dev": true,
+          "optional": true,
+          "bundled": false
+        },
+        {
+          "id": 1093264,
+          "path": "jest>jest-cli>@jest/core>@jest/reporters>node-notifier>semver",
+          "dev": true,
+          "optional": true,
+          "bundled": false
+        },
+        {
+          "id": 1093264,
+          "path": "jest>jest-cli>@jest/core>jest-config>jest-jasmine2>jest-snapshot>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093264,
+          "path": "jest>@jest/core>jest-runner>jest-config>jest-jasmine2>jest-snapshot>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093264,
+          "path": "jest>jest-cli>@jest/core>jest-runner>jest-config>jest-jasmine2>jest-snapshot>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093264,
+          "path": "jest>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>jest-jasmine2>jest-snapshot>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093264,
+          "path": "jest>jest-cli>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>jest-jasmine2>jest-snapshot>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093264,
+          "path": "jest>jest-cli>@jest/core>jest-runner>jest-config>@jest/test-sequencer>jest-runner>jest-config>jest-jasmine2>jest-snapshot>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093264,
+          "path": "jest>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>@jest/test-sequencer>jest-runner>jest-config>jest-jasmine2>jest-snapshot>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093264,
+          "path": "jest>jest-cli>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>@jest/test-sequencer>jest-runner>jest-config>jest-jasmine2>jest-snapshot>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "semver",
+      "target": "7.5.4",
+      "depth": 13
+    },
+    {
+      "action": "update",
+      "resolves": [
+        {
+          "id": 1093381,
+          "path": "@angular-devkit/build-angular>babel-loader>loader-utils>json5",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093381,
+          "path": "@angular-devkit/build-angular>webpack>loader-utils>json5",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093381,
+          "path": "@angular-devkit/build-angular>worker-plugin>loader-utils>json5",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093381,
+          "path": "eslint-plugin-import>tsconfig-paths>json5",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093381,
+          "path": "ts-loader>loader-utils>json5",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093381,
+          "path": "webpack>loader-utils>json5",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "json5",
+      "target": "1.0.2",
+      "depth": 4
+    },
+    {
+      "action": "update",
+      "resolves": [
+        {
+          "id": 1094009,
+          "path": "@angular-devkit/build-angular>glob>minimatch",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094009,
+          "path": "@angular-devkit/build-angular>webpack>terser-webpack-plugin>cacache>glob>minimatch",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1094009,
+          "path": "@angular-devkit/build-angular>webpack>terser-webpack-plugin>cacache>rimraf>glob>minimatch",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "minimatch",
+      "target": "3.1.2",
+      "depth": 7
+    },
+    {
+      "action": "update",
+      "resolves": [
+        {
+          "id": 1094090,
+          "path": "jest-coverage-ratchet>yargs>string-width>strip-ansi>ansi-regex",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "ansi-regex",
+      "target": "3.0.1",
+      "depth": 5
+    },
+    {
+      "action": "review",
+      "module": "yargs-parser",
+      "resolves": [
+        {
+          "id": 1088811,
+          "path": "jest-coverage-ratchet>yargs>yargs-parser",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ]
+    },
+    {
+      "action": "review",
+      "module": "request",
+      "resolves": [
+        {
+          "id": 1092972,
+          "path": "@angular/cli>universal-analytics>request",
+          "dev": true,
+          "bundled": false,
+          "optional": false
+        },
+        {
+          "id": 1092972,
+          "path": "@angular/cli>pacote>@npmcli/run-script>node-gyp>request",
+          "dev": true,
+          "bundled": false,
+          "optional": false
+        },
+        {
+          "id": 1092972,
+          "path": "@angular/cli>@schematics/update>pacote>@npmcli/run-script>node-gyp>request",
+          "dev": true,
+          "bundled": false,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "action": "review",
+      "module": "semver",
+      "resolves": [
+        {
+          "id": 1093262,
+          "path": "@angular/localize>@babel/core>semver",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093262,
+          "path": "b666ed6bd6ce75706107bb69462a9de36a45a8a470abfabe4e21d24a26fc8a5d>@angular/localize>@babel/core>semver",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093262,
+          "path": "jest-coverage-ratchet>yargs>read-pkg-up>read-pkg>normalize-package-data>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093262,
+          "path": "@angular-devkit/build-angular>@babel/core>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "@angular-devkit/build-angular>@babel/preset-env>@babel/helper-compilation-targets>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "@angular-devkit/build-angular>@babel/preset-env>@babel/plugin-transform-function-name>@babel/helper-compilation-targets>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "@babel/core>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "@babel/core>@babel/helper-compilation-targets>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "@angular/compiler-cli>@babel/core>@babel/helper-compilation-targets>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "cypress-cucumber-preprocessor>@cypress/browserify-preprocessor>@babel/core>@babel/helper-compilation-targets>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>@jest/core>@jest/reporters>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>jest-cli>@jest/core>@jest/reporters>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>@jest/core>@jest/reporters>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>jest-cli>@jest/core>@jest/reporters>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>@jest/core>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>@jest/core>@jest/reporters>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "jest>jest-cli>@jest/core>@jest/reporters>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "standard-version>conventional-changelog>conventional-changelog-core>conventional-changelog-writer>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "standard-version>git-semver-tags>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "standard-version>conventional-recommended-bump>git-semver-tags>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1093263,
+          "path": "standard-version>conventional-changelog>conventional-changelog-core>git-semver-tags>semver",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ]
+    },
+    {
+      "action": "review",
+      "module": "@angular/core",
+      "resolves": [
+        {
+          "id": 1094291,
+          "path": "codelyzer>@angular/core",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ]
+    }
+  ],
+  "advisories": {
+    "1088227": {
+      "findings": [
+        {
+          "version": "0.10.0",
+          "paths": [
+            "@angular-devkit/build-angular>webpack-dev-server>selfsigned>node-forge"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<1.0.0",
+      "module_name": "node-forge",
+      "severity": "low",
+      "github_advisory_id": "GHSA-5rrq-pxf6-6jx5",
+      "cves": [],
+      "access": "public",
+      "patched_versions": ">=1.0.0",
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "updated": "2023-01-11T05:03:14.000Z",
+      "recommendation": "Upgrade to version 1.0.0 or later",
+      "cwe": [
+        "CWE-1321"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1088227,
+      "references": "- https://github.com/digitalbazaar/forge/security/advisories/GHSA-5rrq-pxf6-6jx5\n- https://github.com/advisories/GHSA-5rrq-pxf6-6jx5",
+      "created": "2022-01-08T00:22:42.000Z",
+      "reported_by": null,
+      "title": "Prototype Pollution in node-forge debug API.",
+      "npm_advisory_id": null,
+      "overview": "### Impact\nThe `forge.debug` API had a potential prototype pollution issue if called with untrusted input. The API was only used for internal debug purposes in a safe way and never documented or advertised.  It is suspected that uses of this API, if any exist, would likely not have used untrusted inputs in a vulnerable way.\n\n### Patches\nThe `forge.debug` API and related functions were removed in 1.0.0.\n\n### Workarounds\nDon't use the `forge.debug` API directly or indirectly with untrusted input.\n\n### References\n- https://www.huntr.dev/bounties/1-npm-node-forge/\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in [forge](https://github.com/digitalbazaar/forge).\n* Email us at support@digitalbazaar.com.",
+      "url": "https://github.com/advisories/GHSA-5rrq-pxf6-6jx5"
+    },
+    "1088229": {
+      "findings": [
+        {
+          "version": "0.10.0",
+          "paths": [
+            "@angular-devkit/build-angular>webpack-dev-server>selfsigned>node-forge"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<1.0.0",
+      "module_name": "node-forge",
+      "severity": "low",
+      "github_advisory_id": "GHSA-gf8q-jrpm-jvxq",
+      "cves": [],
+      "access": "public",
+      "patched_versions": ">=1.0.0",
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "updated": "2023-01-11T05:08:11.000Z",
+      "recommendation": "Upgrade to version 1.0.0 or later",
+      "cwe": [
+        "CWE-601"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1088229,
+      "references": "- https://github.com/digitalbazaar/forge/security/advisories/GHSA-gf8q-jrpm-jvxq\n- https://nvd.nist.gov/vuln/detail/CVE-2022-0122\n- https://www.huntr.dev/bounties/41852c50-3c6d-4703-8c55-4db27164a4ae\n- https://github.com/advisories/GHSA-gf8q-jrpm-jvxq",
+      "created": "2022-01-08T00:22:02.000Z",
+      "reported_by": null,
+      "title": "URL parsing in node-forge could lead to undesired behavior.",
+      "npm_advisory_id": null,
+      "overview": "### Impact\nThe regex used for the `forge.util.parseUrl` API would not properly parse certain inputs resulting in a parsed data structure that could lead to undesired behavior.\n\n### Patches\n`forge.util.parseUrl` and other very old related URL APIs were removed in 1.0.0 in favor of letting applications use the more modern WHATWG URL Standard API.\n\n### Workarounds\nEnsure code does not directly or indirectly call `forge.util.parseUrl` with untrusted input.\n\n### References\n- https://www.huntr.dev/bounties/41852c50-3c6d-4703-8c55-4db27164a4ae/\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in [forge](https://github.com/digitalbazaar/forge)\n* Email us at support@digitalbazaar.com\n",
+      "url": "https://github.com/advisories/GHSA-gf8q-jrpm-jvxq"
+    },
+    "1088746": {
+      "findings": [
+        {
+          "version": "0.10.0",
+          "paths": [
+            "@angular-devkit/build-angular>webpack-dev-server>selfsigned>node-forge"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<1.3.0",
+      "module_name": "node-forge",
+      "severity": "moderate",
+      "github_advisory_id": "GHSA-2r2c-g63r-vccr",
+      "cves": [
+        "CVE-2022-24773"
+      ],
+      "access": "public",
+      "patched_versions": ">=1.3.0",
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+      },
+      "updated": "2023-01-27T05:00:57.000Z",
+      "recommendation": "Upgrade to version 1.3.0 or later",
+      "cwe": [
+        "CWE-347"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1088746,
+      "references": "- https://github.com/digitalbazaar/forge/security/advisories/GHSA-2r2c-g63r-vccr\n- https://nvd.nist.gov/vuln/detail/CVE-2022-24773\n- https://github.com/digitalbazaar/forge/commit/3f0b49a0573ef1bb7af7f5673c0cfebf00424df1\n- https://github.com/digitalbazaar/forge/commit/bb822c02df0b61211836472e29b9790cc541cdb2\n- https://github.com/advisories/GHSA-2r2c-g63r-vccr",
+      "created": "2022-03-18T23:10:48.000Z",
+      "reported_by": null,
+      "title": "Improper Verification of Cryptographic Signature in `node-forge`",
+      "npm_advisory_id": null,
+      "overview": "### Impact\n\nRSA PKCS#1 v1.5 signature verification code is not properly checking `DigestInfo` for a proper ASN.1 structure. This can lead to successful verification with signatures that contain invalid structures but a valid digest.\n\n### Patches\n\nThe issue has been addressed in `node-forge` `1.3.0`.\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n* Open an issue in [forge](https://github.com/digitalbazaar/forge)\n* Email us at [example email address](mailto:security@digitalbazaar.com)",
+      "url": "https://github.com/advisories/GHSA-2r2c-g63r-vccr"
+    },
+    "1088811": {
+      "findings": [
+        {
+          "version": "7.0.0",
+          "paths": [
+            "jest-coverage-ratchet>yargs>yargs-parser"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": ">=6.0.0 <13.1.2",
+      "module_name": "yargs-parser",
+      "severity": "moderate",
+      "github_advisory_id": "GHSA-p9pc-299p-vxgp",
+      "cves": [
+        "CVE-2020-7608"
+      ],
+      "access": "public",
+      "patched_versions": ">=13.1.2",
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+      },
+      "updated": "2023-01-27T05:00:51.000Z",
+      "recommendation": "Upgrade to version 13.1.2 or later",
+      "cwe": [
+        "CWE-915",
+        "CWE-1321"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1088811,
+      "references": "- https://snyk.io/vuln/SNYK-JS-YARGSPARSER-560381\n- https://www.npmjs.com/advisories/1500\n- https://github.com/yargs/yargs-parser/commit/63810ca1ae1a24b08293a4d971e70e058c7a41e2\n- https://nvd.nist.gov/vuln/detail/CVE-2020-7608\n- https://github.com/yargs/yargs-parser/commit/1c417bd0b42b09c475ee881e36d292af4fa2cc36\n- https://github.com/advisories/GHSA-p9pc-299p-vxgp",
+      "created": "2020-09-04T18:00:54.000Z",
+      "reported_by": null,
+      "title": "yargs-parser Vulnerable to Prototype Pollution",
+      "npm_advisory_id": null,
+      "overview": "Affected versions of `yargs-parser` are vulnerable to prototype pollution. Arguments are not properly sanitized, allowing an attacker to modify the prototype of `Object`, causing the addition or modification of an existing property that will exist on all objects.  \nParsing the argument `--foo.__proto__.bar baz'` adds a `bar` property with value `baz` to all objects. This is only exploitable if attackers have control over the arguments being passed to `yargs-parser`.\n\n\n\n## Recommendation\n\nUpgrade to versions 13.1.2, 15.0.1, 18.1.1 or later.",
+      "url": "https://github.com/advisories/GHSA-p9pc-299p-vxgp"
+    },
+    "1089434": {
+      "findings": [
+        {
+          "version": "8.5.1",
+          "paths": [
+            "jsonwebtoken"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<=8.5.1",
+      "module_name": "jsonwebtoken",
+      "severity": "moderate",
+      "github_advisory_id": "GHSA-8cf7-32gw-wr33",
+      "cves": [
+        "CVE-2022-23539"
+      ],
+      "access": "public",
+      "patched_versions": ">=9.0.0",
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "updated": "2023-01-31T05:01:09.000Z",
+      "recommendation": "Upgrade to version 9.0.0 or later",
+      "cwe": [
+        "CWE-327"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1089434,
+      "references": "- https://github.com/auth0/node-jsonwebtoken/security/advisories/GHSA-8cf7-32gw-wr33\n- https://github.com/auth0/node-jsonwebtoken/commit/e1fa9dcc12054a8681db4e6373da1b30cf7016e3\n- https://nvd.nist.gov/vuln/detail/CVE-2022-23539\n- https://github.com/advisories/GHSA-8cf7-32gw-wr33",
+      "created": "2022-12-22T03:32:22.000Z",
+      "reported_by": null,
+      "title": "jsonwebtoken unrestricted key type could lead to legacy keys usage ",
+      "npm_advisory_id": null,
+      "overview": "# Overview\n\nVersions `<=8.5.1` of `jsonwebtoken` library could be misconfigured so that legacy, insecure key types are used for signature verification. For example, DSA keys could be used with the RS256 algorithm. \n\n# Am I affected?\n\nYou are affected if you are using an algorithm and a key type other than the combinations mentioned below\n\n| Key type |  algorithm                                    |\n|----------|------------------------------------------|\n| ec           | ES256, ES384, ES512                      |\n| rsa          | RS256, RS384, RS512, PS256, PS384, PS512 |\n| rsa-pss  | PS256, PS384, PS512                      |\n\nAnd for Elliptic Curve algorithms:\n\n| `alg` | Curve      |\n|-------|------------|\n| ES256 | prime256v1 |\n| ES384 | secp384r1  |\n| ES512 | secp521r1  |\n\n# How do I fix it?\n\nUpdate to version 9.0.0. This version validates for asymmetric key type and algorithm combinations. Please refer to the above mentioned algorithm / key type combinations for the valid secure configuration. After updating to version 9.0.0, If you still intend to continue with signing or verifying tokens using invalid key type/algorithm value combinations, you’ll need to set the `allowInvalidAsymmetricKeyTypes` option  to `true` in the `sign()` and/or `verify()` functions.\n\n# Will the fix impact my users?\n\nThere will be no impact, if you update to version 9.0.0 and you already use a valid secure combination of key type and algorithm. Otherwise,  use the  `allowInvalidAsymmetricKeyTypes` option  to `true` in the `sign()` and `verify()` functions to continue usage of invalid key type/algorithm combination in 9.0.0 for legacy compatibility. \n\n",
+      "url": "https://github.com/advisories/GHSA-8cf7-32gw-wr33"
+    },
+    "1091087": {
+      "findings": [
+        {
+          "version": "8.5.1",
+          "paths": [
+            "jsonwebtoken"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<=8.5.1",
+      "module_name": "jsonwebtoken",
+      "severity": "moderate",
+      "github_advisory_id": "GHSA-hjrf-2m68-5959",
+      "cves": [
+        "CVE-2022-23541"
+      ],
+      "access": "public",
+      "patched_versions": ">=9.0.0",
+      "cvss": {
+        "score": 5,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L"
+      },
+      "updated": "2023-01-29T05:06:34.000Z",
+      "recommendation": "Upgrade to version 9.0.0 or later",
+      "cwe": [
+        "CWE-287"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1091087,
+      "references": "- https://github.com/auth0/node-jsonwebtoken/security/advisories/GHSA-hjrf-2m68-5959\n- https://github.com/auth0/node-jsonwebtoken/commit/e1fa9dcc12054a8681db4e6373da1b30cf7016e3\n- https://nvd.nist.gov/vuln/detail/CVE-2022-23541\n- https://github.com/auth0/node-jsonwebtoken/releases/tag/v9.0.0\n- https://github.com/advisories/GHSA-hjrf-2m68-5959",
+      "created": "2022-12-22T03:33:19.000Z",
+      "reported_by": null,
+      "title": "jsonwebtoken's insecure implementation of key retrieval function could lead to Forgeable Public/Private Tokens from RSA to HMAC",
+      "npm_advisory_id": null,
+      "overview": "# Overview\n\nVersions `<=8.5.1` of `jsonwebtoken` library can be misconfigured so that passing a poorly implemented key retrieval function (referring to the `secretOrPublicKey` argument from the [readme link](https://github.com/auth0/node-jsonwebtoken#jwtverifytoken-secretorpublickey-options-callback)) will result in incorrect verification of tokens. There is a possibility of using a different algorithm and key combination in verification  than the one that was used to sign the tokens. Specifically, tokens signed with an asymmetric public key could be verified with a symmetric HS256 algorithm. This can lead to successful validation of forged tokens. \n\n# Am I affected?\n\nYou will be affected if your application is supporting usage of both symmetric key and asymmetric key in jwt.verify() implementation with the same key retrieval function. \n\n# How do I fix it?\n \nUpdate to version 9.0.0.\n\n# Will the fix impact my users?\n\nThere is no impact for end users",
+      "url": "https://github.com/advisories/GHSA-hjrf-2m68-5959"
+    },
+    "1091181": {
+      "findings": [
+        {
+          "version": "3.1.0",
+          "paths": [
+            "webpack>watchpack>watchpack-chokidar2>chokidar>glob-parent",
+            "@angular-devkit/build-angular>webpack>watchpack>watchpack-chokidar2>chokidar>glob-parent"
+          ]
+        },
+        {
+          "version": "3.1.0",
+          "paths": [
+            "@angular-devkit/build-angular>webpack-dev-server>chokidar>glob-parent"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<5.1.2",
+      "module_name": "glob-parent",
+      "severity": "high",
+      "github_advisory_id": "GHSA-ww39-953v-wcq6",
+      "cves": [
+        "CVE-2020-28469"
+      ],
+      "access": "public",
+      "patched_versions": ">=5.1.2",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "updated": "2023-02-28T22:39:43.000Z",
+      "recommendation": "Upgrade to version 5.1.2 or later",
+      "cwe": [
+        "CWE-400"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1091181,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2020-28469\n- https://github.com/gulpjs/glob-parent/pull/36\n- https://github.com/gulpjs/glob-parent/blob/6ce8d11f2f1ed8e80a9526b1dc8cf3aa71f43474/index.js%23L9\n- https://github.com/gulpjs/glob-parent/releases/tag/v5.1.2\n- https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBES128-1059093\n- https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1059092\n- https://snyk.io/vuln/SNYK-JS-GLOBPARENT-1016905\n- https://www.oracle.com/security-alerts/cpujan2022.html\n- https://github.com/gulpjs/glob-parent/pull/36/commits/c6db86422a9731d4f3d332ce4a81c27ea6b0ee46\n- https://github.com/advisories/GHSA-ww39-953v-wcq6",
+      "created": "2021-06-07T21:56:34.000Z",
+      "reported_by": null,
+      "title": "glob-parent before 5.1.2 vulnerable to Regular Expression Denial of Service in enclosure regex",
+      "npm_advisory_id": null,
+      "overview": "This affects the package glob-parent before 5.1.2. The enclosure regex used to check for strings ending in enclosure containing path separator.",
+      "url": "https://github.com/advisories/GHSA-ww39-953v-wcq6"
+    },
+    "1091350": {
+      "findings": [
+        {
+          "version": "0.10.0",
+          "paths": [
+            "@angular-devkit/build-angular>webpack-dev-server>selfsigned>node-forge"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<1.3.0",
+      "module_name": "node-forge",
+      "severity": "high",
+      "github_advisory_id": "GHSA-cfm4-qjh2-4765",
+      "cves": [
+        "CVE-2022-24771"
+      ],
+      "access": "public",
+      "patched_versions": ">=1.3.0",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+      },
+      "updated": "2023-03-13T21:33:08.000Z",
+      "recommendation": "Upgrade to version 1.3.0 or later",
+      "cwe": [
+        "CWE-347"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1091350,
+      "references": "- https://github.com/digitalbazaar/forge/security/advisories/GHSA-cfm4-qjh2-4765\n- https://nvd.nist.gov/vuln/detail/CVE-2022-24771\n- https://github.com/digitalbazaar/forge/commit/3f0b49a0573ef1bb7af7f5673c0cfebf00424df1\n- https://github.com/digitalbazaar/forge/commit/bb822c02df0b61211836472e29b9790cc541cdb2\n- https://github.com/advisories/GHSA-cfm4-qjh2-4765",
+      "created": "2022-03-18T23:09:54.000Z",
+      "reported_by": null,
+      "title": "Improper Verification of Cryptographic Signature in node-forge",
+      "npm_advisory_id": null,
+      "overview": "### Impact\n\nRSA PKCS#1 v1.5 signature verification code is lenient in checking the digest algorithm structure. This can allow a crafted structure that steals padding bytes and uses unchecked portion of the PKCS#1 encoded message to forge a signature when a low public exponent is being used.\n\n### Patches\n\nThe issue has been addressed in `node-forge` `1.3.0`.\n\n### References\n\nFor more information, please see\n[\"Bleichenbacher's RSA signature forgery based on implementation error\"](https://mailarchive.ietf.org/arch/msg/openpgp/5rnE9ZRN1AokBVj3VqblGlP63QE/)\nby Hal Finney.\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n* Open an issue in [forge](https://github.com/digitalbazaar/forge)\n* Email us at [example email address](mailto:security@digitalbazaar.com)",
+      "url": "https://github.com/advisories/GHSA-cfm4-qjh2-4765"
+    },
+    "1091351": {
+      "findings": [
+        {
+          "version": "0.10.0",
+          "paths": [
+            "@angular-devkit/build-angular>webpack-dev-server>selfsigned>node-forge"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<1.3.0",
+      "module_name": "node-forge",
+      "severity": "high",
+      "github_advisory_id": "GHSA-x4jg-mjrx-434g",
+      "cves": [
+        "CVE-2022-24772"
+      ],
+      "access": "public",
+      "patched_versions": ">=1.3.0",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+      },
+      "updated": "2023-03-13T21:31:44.000Z",
+      "recommendation": "Upgrade to version 1.3.0 or later",
+      "cwe": [
+        "CWE-347"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1091351,
+      "references": "- https://github.com/digitalbazaar/forge/security/advisories/GHSA-x4jg-mjrx-434g\n- https://nvd.nist.gov/vuln/detail/CVE-2022-24772\n- https://github.com/digitalbazaar/forge/commit/3f0b49a0573ef1bb7af7f5673c0cfebf00424df1\n- https://github.com/digitalbazaar/forge/commit/bb822c02df0b61211836472e29b9790cc541cdb2\n- https://github.com/advisories/GHSA-x4jg-mjrx-434g",
+      "created": "2022-03-18T23:10:28.000Z",
+      "reported_by": null,
+      "title": "Improper Verification of Cryptographic Signature in node-forge",
+      "npm_advisory_id": null,
+      "overview": "### Impact\n\nRSA PKCS#1 v1.5 signature verification code does not check for tailing garbage bytes after decoding a `DigestInfo` ASN.1 structure. This can allow padding bytes to be removed and garbage data added to forge a signature when a low public exponent is being used.\n\n### Patches\n\nThe issue has been addressed in `node-forge` `1.3.0`.\n\n### References\n\nFor more information, please see\n[\"Bleichenbacher's RSA signature forgery based on implementation error\"](https://mailarchive.ietf.org/arch/msg/openpgp/5rnE9ZRN1AokBVj3VqblGlP63QE/)\nby Hal Finney.\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n* Open an issue in [forge](https://github.com/digitalbazaar/forge)\n* Email us at [example email address](mailto:security@digitalbazaar.com)",
+      "url": "https://github.com/advisories/GHSA-x4jg-mjrx-434g"
+    },
+    "1091690": {
+      "findings": [
+        {
+          "version": "5.5.1",
+          "paths": [
+            "@angular-devkit/build-angular>terser"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": ">=5.0.0 <5.14.2",
+      "module_name": "terser",
+      "severity": "high",
+      "github_advisory_id": "GHSA-4wf5-vphf-c2xc",
+      "cves": [
+        "CVE-2022-25858"
+      ],
+      "access": "public",
+      "patched_versions": ">=5.14.2",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "updated": "2023-04-11T23:40:10.000Z",
+      "recommendation": "Upgrade to version 5.14.2 or later",
+      "cwe": [
+        "CWE-1333"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1091690,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-25858\n- https://github.com/terser/terser/commit/a4da7349fdc92c05094f41d33d06d8cd4e90e76b\n- https://github.com/terser/terser/commit/d8cc5691be980d663c29cc4d5ce67e852d597012\n- https://github.com/terser/terser/blob/master/lib/compress/evaluate.js%23L135\n- https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-2949722\n- https://snyk.io/vuln/SNYK-JS-TERSER-2806366\n- https://github.com/advisories/GHSA-4wf5-vphf-c2xc",
+      "created": "2022-07-16T00:00:20.000Z",
+      "reported_by": null,
+      "title": "Terser insecure use of regular expressions leads to ReDoS",
+      "npm_advisory_id": null,
+      "overview": "The package terser before 4.8.1, from 5.0.0 and before 5.14.2 are vulnerable to Regular Expression Denial of Service (ReDoS) due to insecure usage of regular expressions.",
+      "url": "https://github.com/advisories/GHSA-4wf5-vphf-c2xc"
+    },
+    "1091691": {
+      "findings": [
+        {
+          "version": "4.8.0",
+          "paths": [
+            "@angular-devkit/build-angular>webpack>terser-webpack-plugin>terser"
+          ]
+        },
+        {
+          "version": "4.8.0",
+          "paths": [
+            "webpack>terser-webpack-plugin>terser"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<4.8.1",
+      "module_name": "terser",
+      "severity": "high",
+      "github_advisory_id": "GHSA-4wf5-vphf-c2xc",
+      "cves": [
+        "CVE-2022-25858"
+      ],
+      "access": "public",
+      "patched_versions": ">=4.8.1",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "updated": "2023-04-11T23:40:10.000Z",
+      "recommendation": "Upgrade to version 4.8.1 or later",
+      "cwe": [
+        "CWE-1333"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1091691,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-25858\n- https://github.com/terser/terser/commit/a4da7349fdc92c05094f41d33d06d8cd4e90e76b\n- https://github.com/terser/terser/commit/d8cc5691be980d663c29cc4d5ce67e852d597012\n- https://github.com/terser/terser/blob/master/lib/compress/evaluate.js%23L135\n- https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-2949722\n- https://snyk.io/vuln/SNYK-JS-TERSER-2806366\n- https://github.com/advisories/GHSA-4wf5-vphf-c2xc",
+      "created": "2022-07-16T00:00:20.000Z",
+      "reported_by": null,
+      "title": "Terser insecure use of regular expressions leads to ReDoS",
+      "npm_advisory_id": null,
+      "overview": "The package terser before 4.8.1, from 5.0.0 and before 5.14.2 are vulnerable to Regular Expression Denial of Service (ReDoS) due to insecure usage of regular expressions.",
+      "url": "https://github.com/advisories/GHSA-4wf5-vphf-c2xc"
+    },
+    "1092430": {
+      "findings": [
+        {
+          "version": "10.11.0",
+          "paths": [
+            "cypress-mochawesome-reporter>mochawesome-report-generator>validator",
+            "cypress-mochawesome-reporter>mochawesome>mochawesome-report-generator>validator"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<13.7.0",
+      "module_name": "validator",
+      "severity": "moderate",
+      "github_advisory_id": "GHSA-qgmg-gppg-76g5",
+      "cves": [
+        "CVE-2021-3765"
+      ],
+      "access": "public",
+      "patched_versions": ">=13.7.0",
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "updated": "2023-07-07T21:50:05.000Z",
+      "recommendation": "Upgrade to version 13.7.0 or later",
+      "cwe": [
+        "CWE-1333"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1092430,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2021-3765\n- https://github.com/validatorjs/validator.js/commit/496fc8b2a7f5997acaaec33cc44d0b8dba5fb5e1\n- https://huntr.dev/bounties/c37e975c-21a3-4c5f-9b57-04d63b28cfc9\n- https://github.com/advisories/GHSA-qgmg-gppg-76g5",
+      "created": "2021-11-03T17:34:45.000Z",
+      "reported_by": null,
+      "title": "Inefficient Regular Expression Complexity in validator.js",
+      "npm_advisory_id": null,
+      "overview": "validator.js prior to 13.7.0 is vulnerable to Inefficient Regular Expression Complexity",
+      "url": "https://github.com/advisories/GHSA-qgmg-gppg-76g5"
+    },
+    "1092470": {
+      "findings": [
+        {
+          "version": "2.5.0",
+          "paths": [
+            "cypress>@cypress/request>tough-cookie",
+            "@angular/cli>universal-analytics>request>tough-cookie",
+            "@angular/cli>pacote>@npmcli/run-script>node-gyp>request>tough-cookie",
+            "@angular/cli>@schematics/update>pacote>@npmcli/run-script>node-gyp>request>tough-cookie"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<4.1.3",
+      "module_name": "tough-cookie",
+      "severity": "moderate",
+      "github_advisory_id": "GHSA-72xf-g2v4-qvf3",
+      "cves": [
+        "CVE-2023-26136"
+      ],
+      "access": "public",
+      "patched_versions": ">=4.1.3",
+      "cvss": {
+        "score": 6.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+      },
+      "updated": "2023-07-11T13:44:36.000Z",
+      "recommendation": "Upgrade to version 4.1.3 or later",
+      "cwe": [
+        "CWE-1321"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1092470,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2023-26136\n- https://github.com/salesforce/tough-cookie/issues/282\n- https://github.com/salesforce/tough-cookie/commit/12d474791bb856004e858fdb1c47b7608d09cf6e\n- https://github.com/salesforce/tough-cookie/releases/tag/v4.1.3\n- https://security.snyk.io/vuln/SNYK-JS-TOUGHCOOKIE-5672873\n- https://lists.debian.org/debian-lts-announce/2023/07/msg00010.html\n- https://github.com/advisories/GHSA-72xf-g2v4-qvf3",
+      "created": "2023-07-01T06:30:16.000Z",
+      "reported_by": null,
+      "title": "tough-cookie Prototype Pollution vulnerability",
+      "npm_advisory_id": null,
+      "overview": "Versions of the package tough-cookie before 4.1.3 are vulnerable to Prototype Pollution due to improper handling of Cookies when using CookieJar in `rejectPublicSuffixes=false` mode. This issue arises from the manner in which the objects are initialized.",
+      "url": "https://github.com/advisories/GHSA-72xf-g2v4-qvf3"
+    },
+    "1092549": {
+      "findings": [
+        {
+          "version": "8.5.1",
+          "paths": [
+            "jsonwebtoken"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<9.0.0",
+      "module_name": "jsonwebtoken",
+      "severity": "moderate",
+      "github_advisory_id": "GHSA-qwph-4952-7xr6",
+      "cves": [
+        "CVE-2022-23540"
+      ],
+      "access": "public",
+      "patched_versions": ">=9.0.0",
+      "cvss": {
+        "score": 6.4,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:L"
+      },
+      "updated": "2023-07-14T22:03:14.000Z",
+      "recommendation": "Upgrade to version 9.0.0 or later",
+      "cwe": [
+        "CWE-287",
+        "CWE-327",
+        "CWE-347"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1092549,
+      "references": "- https://github.com/auth0/node-jsonwebtoken/security/advisories/GHSA-qwph-4952-7xr6\n- https://github.com/auth0/node-jsonwebtoken/commit/e1fa9dcc12054a8681db4e6373da1b30cf7016e3\n- https://nvd.nist.gov/vuln/detail/CVE-2022-23540\n- https://github.com/advisories/GHSA-qwph-4952-7xr6",
+      "created": "2022-12-22T03:32:59.000Z",
+      "reported_by": null,
+      "title": "jsonwebtoken vulnerable to signature validation bypass due to insecure default algorithm in jwt.verify()",
+      "npm_advisory_id": null,
+      "overview": "# Overview\n\nIn versions <=8.5.1 of jsonwebtoken library, lack of algorithm definition and a falsy secret or key in the `jwt.verify()` function can lead to signature validation bypass due to defaulting to the `none` algorithm for signature verification.\n\n# Am I affected?\nYou will be affected if all the following are true in the `jwt.verify()` function:\n- a token with no signature is received\n- no algorithms are specified \n- a falsy (e.g. null, false, undefined) secret or key is passed \n\n# How do I fix it?\n \nUpdate to version 9.0.0 which removes the default support for the none algorithm in the `jwt.verify()` method. \n\n# Will the fix impact my users?\n\nThere will be no impact, if you update to version 9.0.0 and you don’t need to allow for the `none` algorithm. If you need 'none' algorithm, you have to explicitly specify that in `jwt.verify()` options.\n",
+      "url": "https://github.com/advisories/GHSA-qwph-4952-7xr6"
+    },
+    "1092971": {
+      "findings": [
+        {
+          "version": "2.88.10",
+          "paths": [
+            "cypress>@cypress/request"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<=2.88.12",
+      "module_name": "@cypress/request",
+      "severity": "moderate",
+      "github_advisory_id": "GHSA-p8p7-x288-28g6",
+      "cves": [
+        "CVE-2023-28155"
+      ],
+      "access": "public",
+      "patched_versions": ">=3.0.0",
+      "cvss": {
+        "score": 6.1,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+      },
+      "updated": "2023-08-14T20:53:47.000Z",
+      "recommendation": "Upgrade to version 3.0.0 or later",
+      "cwe": [
+        "CWE-918"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1092971,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2023-28155\n- https://github.com/request/request/issues/3442\n- https://github.com/request/request/pull/3444\n- https://doyensec.com/resources/Doyensec_Advisory_RequestSSRF_Q12023.pdf\n- https://security.netapp.com/advisory/ntap-20230413-0007/\n- https://github.com/github/advisory-database/pull/2500\n- https://github.com/cypress-io/request/blob/master/lib/redirect.js#L116\n- https://github.com/request/request/blob/master/lib/redirect.js#L111\n- https://github.com/cypress-io/request/pull/28\n- https://github.com/cypress-io/request/commit/c5bcf21d40fb61feaff21a0e5a2b3934a440024f\n- https://github.com/cypress-io/request/releases/tag/v3.0.0\n- https://github.com/advisories/GHSA-p8p7-x288-28g6",
+      "created": "2023-03-16T15:30:19.000Z",
+      "reported_by": null,
+      "title": "Server-Side Request Forgery in Request",
+      "npm_advisory_id": null,
+      "overview": "The `request` package through 2.88.2 for Node.js and the `@cypress/request` package prior to 3.0.0 allow a bypass of SSRF mitigations via an attacker-controller server that does a cross-protocol redirect (HTTP to HTTPS, or HTTPS to HTTP).\n\nNOTE: The `request` package is no longer supported by the maintainer.",
+      "url": "https://github.com/advisories/GHSA-p8p7-x288-28g6"
+    },
+    "1092972": {
+      "findings": [
+        {
+          "version": "2.88.2",
+          "paths": [
+            "@angular/cli>universal-analytics>request",
+            "@angular/cli>pacote>@npmcli/run-script>node-gyp>request",
+            "@angular/cli>@schematics/update>pacote>@npmcli/run-script>node-gyp>request"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<=2.88.2",
+      "module_name": "request",
+      "severity": "moderate",
+      "github_advisory_id": "GHSA-p8p7-x288-28g6",
+      "cves": [
+        "CVE-2023-28155"
+      ],
+      "access": "public",
+      "patched_versions": "<0.0.0",
+      "cvss": {
+        "score": 6.1,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+      },
+      "updated": "2023-08-14T20:53:47.000Z",
+      "recommendation": "None",
+      "cwe": [
+        "CWE-918"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1092972,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2023-28155\n- https://github.com/request/request/issues/3442\n- https://github.com/request/request/pull/3444\n- https://doyensec.com/resources/Doyensec_Advisory_RequestSSRF_Q12023.pdf\n- https://security.netapp.com/advisory/ntap-20230413-0007/\n- https://github.com/github/advisory-database/pull/2500\n- https://github.com/cypress-io/request/blob/master/lib/redirect.js#L116\n- https://github.com/request/request/blob/master/lib/redirect.js#L111\n- https://github.com/cypress-io/request/pull/28\n- https://github.com/cypress-io/request/commit/c5bcf21d40fb61feaff21a0e5a2b3934a440024f\n- https://github.com/cypress-io/request/releases/tag/v3.0.0\n- https://github.com/advisories/GHSA-p8p7-x288-28g6",
+      "created": "2023-03-16T15:30:19.000Z",
+      "reported_by": null,
+      "title": "Server-Side Request Forgery in Request",
+      "npm_advisory_id": null,
+      "overview": "The `request` package through 2.88.2 for Node.js and the `@cypress/request` package prior to 3.0.0 allow a bypass of SSRF mitigations via an attacker-controller server that does a cross-protocol redirect (HTTP to HTTPS, or HTTPS to HTTP).\n\nNOTE: The `request` package is no longer supported by the maintainer.",
+      "url": "https://github.com/advisories/GHSA-p8p7-x288-28g6"
+    },
+    "1092999": {
+      "findings": [
+        {
+          "version": "2.0.0",
+          "paths": [
+            "@angular-devkit/build-angular>@angular-devkit/build-optimizer>loader-utils"
+          ]
+        },
+        {
+          "version": "2.0.0",
+          "paths": [
+            "@angular-devkit/build-angular>loader-utils"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": ">=2.0.0 <2.0.4",
+      "module_name": "loader-utils",
+      "severity": "high",
+      "github_advisory_id": "GHSA-3rfm-jhwj-7488",
+      "cves": [
+        "CVE-2022-37603"
+      ],
+      "access": "public",
+      "patched_versions": ">=2.0.4",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "updated": "2023-08-17T05:02:52.000Z",
+      "recommendation": "Upgrade to version 2.0.4 or later",
+      "cwe": [
+        "CWE-1333"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1092999,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-37603\n- https://github.com/webpack/loader-utils/issues/213\n- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L107\n- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L38\n- https://github.com/webpack/loader-utils/issues/216\n- https://github.com/webpack/loader-utils/commit/17cbf8fa8989c1cb45bdd2997aa524729475f1fa\n- https://github.com/webpack/loader-utils/commit/ac09944dfacd7c4497ef692894b09e63e09a5eeb\n- https://github.com/webpack/loader-utils/commit/d2d752d59629daee38f34b24307221349c490eb1\n- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ERN6YE3DS7NBW7UH44SCJBMNC2NWQ7SM/\n- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KAC5KQ2SEWAMQ6UZAUBZ5KXKEOESH375/\n- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VNV2GNZXOTEDAJRFH3ZYWRUBGIVL7BSU/\n- https://github.com/advisories/GHSA-3rfm-jhwj-7488",
+      "created": "2022-10-14T19:00:38.000Z",
+      "reported_by": null,
+      "title": "loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS) via url variable",
+      "npm_advisory_id": null,
+      "overview": "A Regular expression denial of service (ReDoS) flaw was found in Function interpolateName in interpolateName.js in webpack loader-utils 2.0.0 via the url variable in interpolateName.js. A badly or maliciously formed string could be used to send crafted requests that cause a system to crash or take a disproportional amount of time to process. This issue has been patched in versions 1.4.2, 2.0.4 and 3.2.1.",
+      "url": "https://github.com/advisories/GHSA-3rfm-jhwj-7488"
+    },
+    "1093000": {
+      "findings": [
+        {
+          "version": "1.4.0",
+          "paths": [
+            "@angular-devkit/build-angular>babel-loader>loader-utils"
+          ]
+        },
+        {
+          "version": "1.4.0",
+          "paths": [
+            "@angular-devkit/build-angular>webpack>loader-utils"
+          ]
+        },
+        {
+          "version": "1.4.0",
+          "paths": [
+            "@angular-devkit/build-angular>worker-plugin>loader-utils"
+          ]
+        },
+        {
+          "version": "1.4.0",
+          "paths": [
+            "ts-loader>loader-utils"
+          ]
+        },
+        {
+          "version": "1.4.0",
+          "paths": [
+            "webpack>loader-utils"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": ">=1.0.0 <1.4.2",
+      "module_name": "loader-utils",
+      "severity": "high",
+      "github_advisory_id": "GHSA-3rfm-jhwj-7488",
+      "cves": [
+        "CVE-2022-37603"
+      ],
+      "access": "public",
+      "patched_versions": ">=1.4.2",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "updated": "2023-08-17T05:02:52.000Z",
+      "recommendation": "Upgrade to version 1.4.2 or later",
+      "cwe": [
+        "CWE-1333"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1093000,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-37603\n- https://github.com/webpack/loader-utils/issues/213\n- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L107\n- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L38\n- https://github.com/webpack/loader-utils/issues/216\n- https://github.com/webpack/loader-utils/commit/17cbf8fa8989c1cb45bdd2997aa524729475f1fa\n- https://github.com/webpack/loader-utils/commit/ac09944dfacd7c4497ef692894b09e63e09a5eeb\n- https://github.com/webpack/loader-utils/commit/d2d752d59629daee38f34b24307221349c490eb1\n- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ERN6YE3DS7NBW7UH44SCJBMNC2NWQ7SM/\n- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KAC5KQ2SEWAMQ6UZAUBZ5KXKEOESH375/\n- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VNV2GNZXOTEDAJRFH3ZYWRUBGIVL7BSU/\n- https://github.com/advisories/GHSA-3rfm-jhwj-7488",
+      "created": "2022-10-14T19:00:38.000Z",
+      "reported_by": null,
+      "title": "loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS) via url variable",
+      "npm_advisory_id": null,
+      "overview": "A Regular expression denial of service (ReDoS) flaw was found in Function interpolateName in interpolateName.js in webpack loader-utils 2.0.0 via the url variable in interpolateName.js. A badly or maliciously formed string could be used to send crafted requests that cause a system to crash or take a disproportional amount of time to process. This issue has been patched in versions 1.4.2, 2.0.4 and 3.2.1.",
+      "url": "https://github.com/advisories/GHSA-3rfm-jhwj-7488"
+    },
+    "1093262": {
+      "findings": [
+        {
+          "version": "5.7.1",
+          "paths": [
+            "jsonwebtoken>semver",
+            "@angular/localize>@babel/core>semver",
+            "b666ed6bd6ce75706107bb69462a9de36a45a8a470abfabe4e21d24a26fc8a5d>@angular/localize>@babel/core>semver",
+            "webpack>terser-webpack-plugin>find-cache-dir>make-dir>semver",
+            "jest-coverage-ratchet>yargs>read-pkg-up>read-pkg>normalize-package-data>semver",
+            "@angular-devkit/build-angular>webpack-dev-server>internal-ip>default-gateway>execa>cross-spawn>semver",
+            "jest>@jest/core>@jest/transform>jest-haste-map>sane>execa>cross-spawn>semver",
+            "jest>@jest/core>@jest/reporters>@jest/transform>jest-haste-map>sane>execa>cross-spawn>semver",
+            "jest>jest-cli>@jest/core>@jest/reporters>@jest/transform>jest-haste-map>sane>execa>cross-spawn>semver",
+            "jest>jest-cli>@jest/core>jest-runner>jest-config>@jest/test-sequencer>jest-haste-map>sane>execa>cross-spawn>semver",
+            "jest>jest-cli>@jest/core>jest-runner>jest-runtime>jest-config>@jest/test-sequencer>jest-haste-map>sane>execa>cross-spawn>semver",
+            "jest>@jest/core>jest-runner>jest-config>jest-jasmine2>jest-runtime>jest-config>@jest/test-sequencer>jest-haste-map>sane>execa>cross-spawn>semver",
+            "jest>jest-cli>@jest/core>jest-runner>jest-config>jest-jasmine2>jest-runtime>jest-config>@jest/test-sequencer>jest-haste-map>sane>execa>cross-spawn>semver",
+            "jest>jest-cli>@jest/core>jest-runner>jest-config>jest-jasmine2>jest-runtime>jest-config>babel-jest>@jest/transform>jest-haste-map>sane>execa>cross-spawn>semver"
+          ]
+        },
+        {
+          "version": "5.7.1",
+          "paths": [
+            "@angular-devkit/build-angular>@babel/core>semver"
+          ]
+        },
+        {
+          "version": "5.7.1",
+          "paths": [
+            "@angular-devkit/build-angular>webpack>terser-webpack-plugin>find-cache-dir>make-dir>semver"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<5.7.2",
+      "module_name": "semver",
+      "severity": "moderate",
+      "github_advisory_id": "GHSA-c2qf-rxjj-qqgw",
+      "cves": [
+        "CVE-2022-25883"
+      ],
+      "access": "public",
+      "patched_versions": ">=5.7.2",
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "updated": "2023-09-01T23:43:55.000Z",
+      "recommendation": "Upgrade to version 5.7.2 or later",
+      "cwe": [
+        "CWE-1333"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1093262,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-25883\n- https://github.com/npm/node-semver/pull/564\n- https://github.com/npm/node-semver/commit/717534ee353682f3bcf33e60a8af4292626d4441\n- https://security.snyk.io/vuln/SNYK-JS-SEMVER-3247795\n- https://github.com/npm/node-semver/blob/main/classes/range.js#L97-L104\n- https://github.com/npm/node-semver/blob/main/internal/re.js#L138\n- https://github.com/npm/node-semver/blob/main/internal/re.js#L160\n- https://github.com/npm/node-semver/pull/585\n- https://github.com/npm/node-semver/commit/928e56d21150da0413a3333a3148b20e741a920c\n- https://github.com/npm/node-semver/pull/593\n- https://github.com/npm/node-semver/commit/2f8fd41487acf380194579ecb6f8b1bbfe116be0\n- https://github.com/advisories/GHSA-c2qf-rxjj-qqgw",
+      "created": "2023-06-21T06:30:28.000Z",
+      "reported_by": null,
+      "title": "semver vulnerable to Regular Expression Denial of Service",
+      "npm_advisory_id": null,
+      "overview": "Versions of the package semver before 7.5.2 on the 7.x branch, before 6.3.1 on the 6.x branch, and all other versions before 5.7.2 are vulnerable to Regular Expression Denial of Service (ReDoS) via the function new Range, when untrusted user data is provided as a range.",
+      "url": "https://github.com/advisories/GHSA-c2qf-rxjj-qqgw"
+    },
+    "1093263": {
+      "findings": [
+        {
+          "version": "6.3.0",
+          "paths": [
+            "@angular-devkit/build-angular>@babel/preset-env>@babel/helper-compilation-targets>semver",
+            "@angular-devkit/build-angular>@babel/preset-env>@babel/plugin-transform-function-name>@babel/helper-compilation-targets>semver"
+          ]
+        },
+        {
+          "version": "6.3.0",
+          "paths": [
+            "@angular-devkit/build-angular>@babel/preset-env>@babel/plugin-proposal-object-rest-spread>@babel/helper-compilation-targets>semver"
+          ]
+        },
+        {
+          "version": "6.3.0",
+          "paths": [
+            "@babel/core>semver",
+            "@babel/core>@babel/helper-compilation-targets>semver",
+            "@angular/compiler-cli>@babel/core>@babel/helper-compilation-targets>semver",
+            "cypress-cucumber-preprocessor>@cypress/browserify-preprocessor>@babel/core>@babel/helper-compilation-targets>semver",
+            "@angular-devkit/build-angular>@jsdevtools/coverage-istanbul-loader>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+            "jest>@jest/core>@jest/reporters>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+            "jest>jest-cli>@jest/core>@jest/reporters>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+            "jest>@jest/core>@jest/reporters>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+            "jest>jest-cli>@jest/core>@jest/reporters>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+            "jest>@jest/core>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+            "jest>jest-cli>@jest/core>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+            "jest>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+            "jest>jest-cli>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+            "jest>jest-cli>@jest/core>jest-runner>jest-config>@jest/test-sequencer>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+            "jest>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>@jest/test-sequencer>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver",
+            "jest>jest-cli>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>@jest/test-sequencer>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>@babel/core>@babel/helper-compilation-targets>semver"
+          ]
+        },
+        {
+          "version": "6.3.0",
+          "paths": [
+            "@angular-devkit/build-angular>@jsdevtools/coverage-istanbul-loader>istanbul-lib-instrument>semver",
+            "jest>@jest/core>@jest/reporters>istanbul-lib-instrument>semver",
+            "jest>jest-cli>@jest/core>@jest/reporters>istanbul-lib-instrument>semver"
+          ]
+        },
+        {
+          "version": "6.3.0",
+          "paths": [
+            "babel-loader>make-dir>semver",
+            "@angular-devkit/build-angular>find-cache-dir>make-dir>semver",
+            "@angular-devkit/build-angular>babel-loader>find-cache-dir>make-dir>semver",
+            "jest>@jest/core>@jest/reporters>istanbul-lib-report>make-dir>semver",
+            "jest>jest-cli>@jest/core>@jest/reporters>istanbul-lib-report>make-dir>semver",
+            "jest>jest-cli>@jest/core>@jest/reporters>istanbul-reports>istanbul-lib-report>make-dir>semver"
+          ]
+        },
+        {
+          "version": "6.3.0",
+          "paths": [
+            "@angular-devkit/build-angular>stylus>semver"
+          ]
+        },
+        {
+          "version": "6.3.0",
+          "paths": [
+            "@angular-devkit/build-angular>webpack-dev-server>semver"
+          ]
+        },
+        {
+          "version": "6.3.0",
+          "paths": [
+            "@angular/compiler-cli>semver"
+          ]
+        },
+        {
+          "version": "6.3.0",
+          "paths": [
+            "jest>@jest/core>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>semver",
+            "jest>@jest/core>@jest/reporters>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>semver",
+            "jest>jest-cli>@jest/core>@jest/reporters>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>semver",
+            "jest>@jest/core>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>semver",
+            "jest>jest-cli>@jest/core>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>semver",
+            "jest>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>semver",
+            "jest>jest-cli>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>semver",
+            "jest>jest-cli>@jest/core>jest-runner>jest-config>@jest/test-sequencer>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>semver",
+            "jest>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>@jest/test-sequencer>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>semver",
+            "jest>jest-cli>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>@jest/test-sequencer>jest-runner>jest-config>babel-jest>@jest/transform>babel-plugin-istanbul>istanbul-lib-instrument>semver"
+          ]
+        },
+        {
+          "version": "6.3.0",
+          "paths": [
+            "standard-version>conventional-changelog>conventional-changelog-core>conventional-changelog-writer>semver"
+          ]
+        },
+        {
+          "version": "6.3.0",
+          "paths": [
+            "standard-version>git-semver-tags>semver",
+            "standard-version>conventional-recommended-bump>git-semver-tags>semver",
+            "standard-version>conventional-changelog>conventional-changelog-core>git-semver-tags>semver"
+          ]
+        },
+        {
+          "version": "6.3.0",
+          "paths": [
+            "ts-loader>semver"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": ">=6.0.0 <6.3.1",
+      "module_name": "semver",
+      "severity": "moderate",
+      "github_advisory_id": "GHSA-c2qf-rxjj-qqgw",
+      "cves": [
+        "CVE-2022-25883"
+      ],
+      "access": "public",
+      "patched_versions": ">=6.3.1",
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "updated": "2023-09-01T23:43:55.000Z",
+      "recommendation": "Upgrade to version 6.3.1 or later",
+      "cwe": [
+        "CWE-1333"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1093263,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-25883\n- https://github.com/npm/node-semver/pull/564\n- https://github.com/npm/node-semver/commit/717534ee353682f3bcf33e60a8af4292626d4441\n- https://security.snyk.io/vuln/SNYK-JS-SEMVER-3247795\n- https://github.com/npm/node-semver/blob/main/classes/range.js#L97-L104\n- https://github.com/npm/node-semver/blob/main/internal/re.js#L138\n- https://github.com/npm/node-semver/blob/main/internal/re.js#L160\n- https://github.com/npm/node-semver/pull/585\n- https://github.com/npm/node-semver/commit/928e56d21150da0413a3333a3148b20e741a920c\n- https://github.com/npm/node-semver/pull/593\n- https://github.com/npm/node-semver/commit/2f8fd41487acf380194579ecb6f8b1bbfe116be0\n- https://github.com/advisories/GHSA-c2qf-rxjj-qqgw",
+      "created": "2023-06-21T06:30:28.000Z",
+      "reported_by": null,
+      "title": "semver vulnerable to Regular Expression Denial of Service",
+      "npm_advisory_id": null,
+      "overview": "Versions of the package semver before 7.5.2 on the 7.x branch, before 6.3.1 on the 6.x branch, and all other versions before 5.7.2 are vulnerable to Regular Expression Denial of Service (ReDoS) via the function new Range, when untrusted user data is provided as a range.",
+      "url": "https://github.com/advisories/GHSA-c2qf-rxjj-qqgw"
+    },
+    "1093264": {
+      "findings": [
+        {
+          "version": "7.3.4",
+          "paths": [
+            "@angular-devkit/build-angular>semver"
+          ]
+        },
+        {
+          "version": "7.3.4",
+          "paths": [
+            "@angular/cli>@schematics/update>semver"
+          ]
+        },
+        {
+          "version": "7.3.4",
+          "paths": [
+            "@angular/cli>semver"
+          ]
+        },
+        {
+          "version": "7.3.2",
+          "paths": [
+            "commitlint>@commitlint/cli>@commitlint/lint>@commitlint/is-ignored>semver"
+          ]
+        },
+        {
+          "version": "7.3.5",
+          "paths": [
+            "jest>@jest/core>jest-snapshot>semver",
+            "jest>@jest/core>@jest/reporters>node-notifier>semver",
+            "jest>jest-cli>@jest/core>@jest/reporters>node-notifier>semver",
+            "jest>jest-cli>@jest/core>jest-config>jest-jasmine2>jest-snapshot>semver"
+          ]
+        },
+        {
+          "version": "7.3.5",
+          "paths": [
+            "jest>@jest/core>jest-runner>jest-config>jest-jasmine2>jest-snapshot>semver",
+            "jest>jest-cli>@jest/core>jest-runner>jest-config>jest-jasmine2>jest-snapshot>semver",
+            "jest>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>jest-jasmine2>jest-snapshot>semver",
+            "jest>jest-cli>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>jest-jasmine2>jest-snapshot>semver",
+            "jest>jest-cli>@jest/core>jest-runner>jest-config>@jest/test-sequencer>jest-runner>jest-config>jest-jasmine2>jest-snapshot>semver",
+            "jest>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>@jest/test-sequencer>jest-runner>jest-config>jest-jasmine2>jest-snapshot>semver",
+            "jest>jest-cli>@jest/core>jest-config>@jest/test-sequencer>jest-runner>jest-config>@jest/test-sequencer>jest-runner>jest-config>jest-jasmine2>jest-snapshot>semver"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": ">=7.0.0 <7.5.2",
+      "module_name": "semver",
+      "severity": "moderate",
+      "github_advisory_id": "GHSA-c2qf-rxjj-qqgw",
+      "cves": [
+        "CVE-2022-25883"
+      ],
+      "access": "public",
+      "patched_versions": ">=7.5.2",
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "updated": "2023-09-01T23:43:55.000Z",
+      "recommendation": "Upgrade to version 7.5.2 or later",
+      "cwe": [
+        "CWE-1333"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1093264,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-25883\n- https://github.com/npm/node-semver/pull/564\n- https://github.com/npm/node-semver/commit/717534ee353682f3bcf33e60a8af4292626d4441\n- https://security.snyk.io/vuln/SNYK-JS-SEMVER-3247795\n- https://github.com/npm/node-semver/blob/main/classes/range.js#L97-L104\n- https://github.com/npm/node-semver/blob/main/internal/re.js#L138\n- https://github.com/npm/node-semver/blob/main/internal/re.js#L160\n- https://github.com/npm/node-semver/pull/585\n- https://github.com/npm/node-semver/commit/928e56d21150da0413a3333a3148b20e741a920c\n- https://github.com/npm/node-semver/pull/593\n- https://github.com/npm/node-semver/commit/2f8fd41487acf380194579ecb6f8b1bbfe116be0\n- https://github.com/advisories/GHSA-c2qf-rxjj-qqgw",
+      "created": "2023-06-21T06:30:28.000Z",
+      "reported_by": null,
+      "title": "semver vulnerable to Regular Expression Denial of Service",
+      "npm_advisory_id": null,
+      "overview": "Versions of the package semver before 7.5.2 on the 7.x branch, before 6.3.1 on the 6.x branch, and all other versions before 5.7.2 are vulnerable to Regular Expression Denial of Service (ReDoS) via the function new Range, when untrusted user data is provided as a range.",
+      "url": "https://github.com/advisories/GHSA-c2qf-rxjj-qqgw"
+    },
+    "1093381": {
+      "findings": [
+        {
+          "version": "1.0.1",
+          "paths": [
+            "@angular-devkit/build-angular>babel-loader>loader-utils>json5"
+          ]
+        },
+        {
+          "version": "1.0.1",
+          "paths": [
+            "@angular-devkit/build-angular>webpack>loader-utils>json5"
+          ]
+        },
+        {
+          "version": "1.0.1",
+          "paths": [
+            "@angular-devkit/build-angular>worker-plugin>loader-utils>json5"
+          ]
+        },
+        {
+          "version": "1.0.1",
+          "paths": [
+            "eslint-plugin-import>tsconfig-paths>json5"
+          ]
+        },
+        {
+          "version": "1.0.1",
+          "paths": [
+            "ts-loader>loader-utils>json5"
+          ]
+        },
+        {
+          "version": "1.0.1",
+          "paths": [
+            "webpack>loader-utils>json5"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<1.0.2",
+      "module_name": "json5",
+      "severity": "high",
+      "github_advisory_id": "GHSA-9c47-m6qq-7p4h",
+      "cves": [
+        "CVE-2022-46175"
+      ],
+      "access": "public",
+      "patched_versions": ">=1.0.2",
+      "cvss": {
+        "score": 7.1,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:L/A:H"
+      },
+      "updated": "2023-09-06T22:47:50.000Z",
+      "recommendation": "Upgrade to version 1.0.2 or later",
+      "cwe": [
+        "CWE-1321"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1093381,
+      "references": "- https://github.com/json5/json5/security/advisories/GHSA-9c47-m6qq-7p4h\n- https://nvd.nist.gov/vuln/detail/CVE-2022-46175\n- https://github.com/json5/json5/issues/199\n- https://github.com/json5/json5/issues/295\n- https://github.com/json5/json5/pull/298\n- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3S26TLPLVFAJTUN3VIXFDEBEXDYO22CE/\n- https://github.com/json5/json5/commit/62a65408408d40aeea14c7869ed327acead12972\n- https://github.com/json5/json5/commit/7774c1097993bc3ce9f0ac4b722a32bf7d6871c8\n- https://github.com/advisories/GHSA-9c47-m6qq-7p4h",
+      "created": "2022-12-29T01:51:03.000Z",
+      "reported_by": null,
+      "title": "Prototype Pollution in JSON5 via Parse Method",
+      "npm_advisory_id": null,
+      "overview": "The `parse` method of the JSON5 library before and including version `2.2.1` does not restrict parsing of keys named `__proto__`, allowing specially crafted strings to pollute the prototype of the resulting object.\n\nThis vulnerability pollutes the prototype of the object returned by `JSON5.parse` and not the global Object prototype, which is the commonly understood definition of Prototype Pollution. However, polluting the prototype of a single object can have significant security impact for an application if the object is later used in trusted operations.\n\n## Impact\nThis vulnerability could allow an attacker to set arbitrary and unexpected keys on the object returned from `JSON5.parse`. The actual impact will depend on how applications utilize the returned object and how they filter unwanted keys, but could include denial of service, cross-site scripting, elevation of privilege, and in extreme cases, remote code execution.\n\n## Mitigation\nThis vulnerability is patched in json5 v2.2.2 and later. A patch has also been backported for json5 v1 in versions v1.0.2 and later.\n\n## Details\n \nSuppose a developer wants to allow users and admins to perform some risky operation, but they want to restrict what non-admins can do. To accomplish this, they accept a JSON blob from the user, parse it using `JSON5.parse`, confirm that the provided data does not set some sensitive keys, and then performs the risky operation using the validated data:\n \n```js\nconst JSON5 = require('json5');\n\nconst doSomethingDangerous = (props) => {\n  if (props.isAdmin) {\n    console.log('Doing dangerous thing as admin.');\n  } else {\n    console.log('Doing dangerous thing as user.');\n  }\n};\n\nconst secCheckKeysSet = (obj, searchKeys) => {\n  let searchKeyFound = false;\n  Object.keys(obj).forEach((key) => {\n    if (searchKeys.indexOf(key) > -1) {\n      searchKeyFound = true;\n    }\n  });\n  return searchKeyFound;\n};\n\nconst props = JSON5.parse('{\"foo\": \"bar\"}');\nif (!secCheckKeysSet(props, ['isAdmin', 'isMod'])) {\n  doSomethingDangerous(props); // \"Doing dangerous thing as user.\"\n} else {\n  throw new Error('Forbidden...');\n}\n```\n \nIf the user attempts to set the `isAdmin` key, their request will be rejected:\n \n```js\nconst props = JSON5.parse('{\"foo\": \"bar\", \"isAdmin\": true}');\nif (!secCheckKeysSet(props, ['isAdmin', 'isMod'])) {\n  doSomethingDangerous(props);\n} else {\n  throw new Error('Forbidden...'); // Error: Forbidden...\n}\n```\n \nHowever, users can instead set the `__proto__` key to `{\"isAdmin\": true}`. `JSON5` will parse this key and will set the `isAdmin` key on the prototype of the returned object, allowing the user to bypass the security check and run their request as an admin:\n \n```js\nconst props = JSON5.parse('{\"foo\": \"bar\", \"__proto__\": {\"isAdmin\": true}}');\nif (!secCheckKeysSet(props, ['isAdmin', 'isMod'])) {\n  doSomethingDangerous(props); // \"Doing dangerous thing as admin.\"\n} else {\n  throw new Error('Forbidden...');\n}\n ```",
+      "url": "https://github.com/advisories/GHSA-9c47-m6qq-7p4h"
+    },
+    "1093719": {
+      "findings": [
+        {
+          "version": "0.10.0",
+          "paths": [
+            "@angular-devkit/build-angular>webpack-dev-server>selfsigned>node-forge"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<1.0.0",
+      "module_name": "node-forge",
+      "severity": "moderate",
+      "github_advisory_id": "GHSA-8fr3-hfg3-gpgp",
+      "cves": [
+        "CVE-2022-0122"
+      ],
+      "access": "public",
+      "patched_versions": ">=1.0.0",
+      "cvss": {
+        "score": 6.1,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+      },
+      "updated": "2023-09-11T22:42:43.000Z",
+      "recommendation": "Upgrade to version 1.0.0 or later",
+      "cwe": [
+        "CWE-601"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1093719,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-0122\n- https://github.com/digitalbazaar/forge/commit/db8016c805371e72b06d8e2edfe0ace0df934a5e\n- https://huntr.dev/bounties/41852c50-3c6d-4703-8c55-4db27164a4ae\n- https://github.com/advisories/GHSA-8fr3-hfg3-gpgp",
+      "created": "2022-01-21T23:36:19.000Z",
+      "reported_by": null,
+      "title": "Open Redirect in node-forge",
+      "npm_advisory_id": null,
+      "overview": "parseUrl functionality in node-forge mishandles certain uses of backslash such as `https:/\\/\\/\\` and interprets the URI as a relative path. ",
+      "url": "https://github.com/advisories/GHSA-8fr3-hfg3-gpgp"
+    },
+    "1094009": {
+      "findings": [
+        {
+          "version": "3.0.4",
+          "paths": [
+            "@angular-devkit/build-angular>minimatch",
+            "@angular-devkit/build-angular>glob>minimatch",
+            "@angular-devkit/build-angular>webpack>terser-webpack-plugin>cacache>glob>minimatch",
+            "@angular-devkit/build-angular>webpack>terser-webpack-plugin>cacache>rimraf>glob>minimatch"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<3.0.5",
+      "module_name": "minimatch",
+      "severity": "high",
+      "github_advisory_id": "GHSA-f8q6-p94x-37v3",
+      "cves": [
+        "CVE-2022-3517"
+      ],
+      "access": "public",
+      "patched_versions": ">=3.0.5",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "updated": "2023-09-20T05:03:32.000Z",
+      "recommendation": "Upgrade to version 3.0.5 or later",
+      "cwe": [
+        "CWE-400",
+        "CWE-1333"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1094009,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-3517\n- https://github.com/grafana/grafana-image-renderer/issues/329\n- https://github.com/isaacs/minimatch/commit/a8763f4388e51956be62dc6025cec1126beeb5e6\n- https://github.com/nodejs/node/issues/42510\n- https://lists.debian.org/debian-lts-announce/2023/01/msg00011.html\n- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MTEUUTNIEBHGKUKKLNUZSV7IEP6IP3Q3/\n- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UM6XJ73Q3NAM5KSGCOKJ2ZIA6GUWUJLK/\n- https://github.com/advisories/GHSA-f8q6-p94x-37v3",
+      "created": "2022-10-18T12:00:32.000Z",
+      "reported_by": null,
+      "title": "minimatch ReDoS vulnerability",
+      "npm_advisory_id": null,
+      "overview": "A vulnerability was found in the minimatch package. This flaw allows a Regular Expression Denial of Service (ReDoS) when calling the braceExpand function with specific arguments, resulting in a Denial of Service.",
+      "url": "https://github.com/advisories/GHSA-f8q6-p94x-37v3"
+    },
+    "1094083": {
+      "findings": [
+        {
+          "version": "2.0.0",
+          "paths": [
+            "@angular-devkit/build-angular>@angular-devkit/build-optimizer>loader-utils"
+          ]
+        },
+        {
+          "version": "2.0.0",
+          "paths": [
+            "@angular-devkit/build-angular>loader-utils"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": ">=2.0.0 <2.0.4",
+      "module_name": "loader-utils",
+      "severity": "high",
+      "github_advisory_id": "GHSA-hhq3-ff78-jv3g",
+      "cves": [
+        "CVE-2022-37599"
+      ],
+      "access": "public",
+      "patched_versions": ">=2.0.4",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "updated": "2023-09-21T22:02:26.000Z",
+      "recommendation": "Upgrade to version 2.0.4 or later",
+      "cwe": [
+        "CWE-400"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1094083,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-37599\n- https://github.com/webpack/loader-utils/issues/211\n- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L38\n- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L83\n- https://github.com/webpack/loader-utils/issues/216\n- https://github.com/webpack/loader-utils/commit/17cbf8fa8989c1cb45bdd2997aa524729475f1fa\n- https://github.com/webpack/loader-utils/commit/ac09944dfacd7c4497ef692894b09e63e09a5eeb\n- https://github.com/webpack/loader-utils/commit/d2d752d59629daee38f34b24307221349c490eb1\n- https://github.com/advisories/GHSA-hhq3-ff78-jv3g",
+      "created": "2022-10-12T12:00:27.000Z",
+      "reported_by": null,
+      "title": "loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS)",
+      "npm_advisory_id": null,
+      "overview": "A regular expression denial of service (ReDoS) flaw was found in Function interpolateName in interpolateName.js in webpack loader-utils via the resourcePath variable in interpolateName.js. A badly or maliciously formed string could be used to send crafted requests that cause a system to crash or take a disproportional amount of time to process. This issue has been patched in versions 1.4.2, 2.0.4 and 3.2.1.",
+      "url": "https://github.com/advisories/GHSA-hhq3-ff78-jv3g"
+    },
+    "1094084": {
+      "findings": [
+        {
+          "version": "1.4.0",
+          "paths": [
+            "@angular-devkit/build-angular>babel-loader>loader-utils"
+          ]
+        },
+        {
+          "version": "1.4.0",
+          "paths": [
+            "@angular-devkit/build-angular>webpack>loader-utils"
+          ]
+        },
+        {
+          "version": "1.4.0",
+          "paths": [
+            "@angular-devkit/build-angular>worker-plugin>loader-utils"
+          ]
+        },
+        {
+          "version": "1.4.0",
+          "paths": [
+            "ts-loader>loader-utils"
+          ]
+        },
+        {
+          "version": "1.4.0",
+          "paths": [
+            "webpack>loader-utils"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": ">=1.0.0 <1.4.2",
+      "module_name": "loader-utils",
+      "severity": "high",
+      "github_advisory_id": "GHSA-hhq3-ff78-jv3g",
+      "cves": [
+        "CVE-2022-37599"
+      ],
+      "access": "public",
+      "patched_versions": ">=1.4.2",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "updated": "2023-09-21T22:02:26.000Z",
+      "recommendation": "Upgrade to version 1.4.2 or later",
+      "cwe": [
+        "CWE-400"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1094084,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-37599\n- https://github.com/webpack/loader-utils/issues/211\n- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L38\n- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L83\n- https://github.com/webpack/loader-utils/issues/216\n- https://github.com/webpack/loader-utils/commit/17cbf8fa8989c1cb45bdd2997aa524729475f1fa\n- https://github.com/webpack/loader-utils/commit/ac09944dfacd7c4497ef692894b09e63e09a5eeb\n- https://github.com/webpack/loader-utils/commit/d2d752d59629daee38f34b24307221349c490eb1\n- https://github.com/advisories/GHSA-hhq3-ff78-jv3g",
+      "created": "2022-10-12T12:00:27.000Z",
+      "reported_by": null,
+      "title": "loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS)",
+      "npm_advisory_id": null,
+      "overview": "A regular expression denial of service (ReDoS) flaw was found in Function interpolateName in interpolateName.js in webpack loader-utils via the resourcePath variable in interpolateName.js. A badly or maliciously formed string could be used to send crafted requests that cause a system to crash or take a disproportional amount of time to process. This issue has been patched in versions 1.4.2, 2.0.4 and 3.2.1.",
+      "url": "https://github.com/advisories/GHSA-hhq3-ff78-jv3g"
+    },
+    "1094087": {
+      "findings": [
+        {
+          "version": "0.2.0",
+          "paths": [
+            "webpack>micromatch>snapdragon>source-map-resolve>decode-uri-component",
+            "@angular-devkit/build-angular>stylus>css-parse>css>source-map-resolve>decode-uri-component",
+            "@angular-devkit/build-angular>webpack>micromatch>braces>snapdragon>source-map-resolve>decode-uri-component",
+            "@angular-devkit/build-angular>webpack>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+            "@angular-devkit/build-angular>webpack-dev-server>http-proxy-middleware>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+            "@angular-devkit/build-angular>webpack-dev-server>chokidar>anymatch>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+            "webpack>watchpack>watchpack-chokidar2>chokidar>anymatch>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+            "@angular-devkit/build-angular>webpack>watchpack>watchpack-chokidar2>chokidar>anymatch>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+            "jest>@jest/core>@jest/reporters>@jest/transform>jest-haste-map>sane>anymatch>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+            "jest>jest-cli>@jest/core>@jest/reporters>@jest/transform>jest-haste-map>sane>anymatch>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+            "jest>jest-cli>@jest/core>jest-runner>jest-config>@jest/test-sequencer>jest-haste-map>sane>anymatch>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+            "jest>jest-cli>@jest/core>jest-runner>jest-runtime>jest-config>@jest/test-sequencer>jest-haste-map>sane>anymatch>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+            "jest>@jest/core>jest-runner>jest-config>jest-jasmine2>jest-runtime>jest-config>@jest/test-sequencer>jest-haste-map>sane>anymatch>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+            "jest>jest-cli>@jest/core>jest-runner>jest-config>jest-jasmine2>jest-runtime>jest-config>@jest/test-sequencer>jest-haste-map>sane>anymatch>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component",
+            "jest>jest-cli>@jest/core>jest-runner>jest-config>jest-jasmine2>jest-runtime>jest-config>babel-jest>@jest/transform>jest-haste-map>sane>anymatch>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<0.2.1",
+      "module_name": "decode-uri-component",
+      "severity": "high",
+      "github_advisory_id": "GHSA-w573-4hg7-7wgq",
+      "cves": [
+        "CVE-2022-38900"
+      ],
+      "access": "public",
+      "patched_versions": ">=0.2.1",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "updated": "2023-09-21T22:16:39.000Z",
+      "recommendation": "Upgrade to version 0.2.1 or later",
+      "cwe": [
+        "CWE-20"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1094087,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-38900\n- https://github.com/SamVerschueren/decode-uri-component/issues/5\n- https://github.com/sindresorhus/query-string/issues/345\n- https://github.com/SamVerschueren/decode-uri-component/commit/746ca5dcb6667c5d364e782d53c542830e4c10b9\n- https://github.com/SamVerschueren/decode-uri-component/releases/tag/v0.2.1\n- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ERN6YE3DS7NBW7UH44SCJBMNC2NWQ7SM/\n- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KAC5KQ2SEWAMQ6UZAUBZ5KXKEOESH375/\n- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VNV2GNZXOTEDAJRFH3ZYWRUBGIVL7BSU/\n- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QABOUA2I542UTANVZIVFKWMRYVHLV32D/\n- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UW4SCMT3SEUFVIL7YIADQ5K36GJEO6I5/\n- https://github.com/advisories/GHSA-w573-4hg7-7wgq",
+      "created": "2022-11-28T15:30:24.000Z",
+      "reported_by": null,
+      "title": "decode-uri-component vulnerable to Denial of Service (DoS)",
+      "npm_advisory_id": null,
+      "overview": "decode-uri-component 0.2.0 is vulnerable to Improper Input Validation resulting in DoS.",
+      "url": "https://github.com/advisories/GHSA-w573-4hg7-7wgq"
+    },
+    "1094088": {
+      "findings": [
+        {
+          "version": "1.4.0",
+          "paths": [
+            "@angular-devkit/build-angular>babel-loader>loader-utils"
+          ]
+        },
+        {
+          "version": "1.4.0",
+          "paths": [
+            "@angular-devkit/build-angular>webpack>loader-utils"
+          ]
+        },
+        {
+          "version": "1.4.0",
+          "paths": [
+            "@angular-devkit/build-angular>worker-plugin>loader-utils"
+          ]
+        },
+        {
+          "version": "1.4.0",
+          "paths": [
+            "ts-loader>loader-utils"
+          ]
+        },
+        {
+          "version": "1.4.0",
+          "paths": [
+            "webpack>loader-utils"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<1.4.1",
+      "module_name": "loader-utils",
+      "severity": "critical",
+      "github_advisory_id": "GHSA-76p3-8jx3-jpfq",
+      "cves": [
+        "CVE-2022-37601"
+      ],
+      "access": "public",
+      "patched_versions": ">=1.4.1",
+      "cvss": {
+        "score": 9.8,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      },
+      "updated": "2023-09-21T22:15:51.000Z",
+      "recommendation": "Upgrade to version 1.4.1 or later",
+      "cwe": [
+        "CWE-1321"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1094088,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-37601\n- https://github.com/webpack/loader-utils/issues/212\n- https://github.com/webpack/loader-utils/releases/tag/v2.0.3\n- https://github.com/webpack/loader-utils/pull/217\n- https://github.com/webpack/loader-utils/pull/220\n- https://github.com/webpack/loader-utils/releases/tag/v1.4.1\n- https://github.com/webpack/loader-utils/issues/212#issuecomment-1319192884\n- https://github.com/xmldom/xmldom/issues/436#issuecomment-1319412826\n- https://dl.acm.org/doi/abs/10.1145/3488932.3497769\n- https://dl.acm.org/doi/pdf/10.1145/3488932.3497769\n- https://lists.debian.org/debian-lts-announce/2022/12/msg00044.html\n- http://users.encs.concordia.ca/~mmannan/publications/JS-vulnerability-aisaccs2022.pdf\n- https://github.com/webpack/loader-utils/commit/f4e48a232fae900237c3e5ff7b57ce9e1c734de1\n- https://github.com/webpack/loader-utils/commit/4504e34c4796a5836ef70458327351675aed48a5\n- https://github.com/webpack/loader-utils/commit/a93cf6f4702012030f6b5ee8340d5c95ec1c7d4c\n- https://github.com/advisories/GHSA-76p3-8jx3-jpfq",
+      "created": "2022-10-13T12:00:28.000Z",
+      "reported_by": null,
+      "title": "Prototype pollution in webpack loader-utils",
+      "npm_advisory_id": null,
+      "overview": "Prototype pollution vulnerability in function parseQuery in parseQuery.js in webpack loader-utils prior to version 2.0.3 via the name variable in parseQuery.js.",
+      "url": "https://github.com/advisories/GHSA-76p3-8jx3-jpfq"
+    },
+    "1094089": {
+      "findings": [
+        {
+          "version": "2.0.0",
+          "paths": [
+            "@angular-devkit/build-angular>@angular-devkit/build-optimizer>loader-utils"
+          ]
+        },
+        {
+          "version": "2.0.0",
+          "paths": [
+            "@angular-devkit/build-angular>loader-utils"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": ">=2.0.0 <2.0.3",
+      "module_name": "loader-utils",
+      "severity": "critical",
+      "github_advisory_id": "GHSA-76p3-8jx3-jpfq",
+      "cves": [
+        "CVE-2022-37601"
+      ],
+      "access": "public",
+      "patched_versions": ">=2.0.3",
+      "cvss": {
+        "score": 9.8,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      },
+      "updated": "2023-09-21T22:15:51.000Z",
+      "recommendation": "Upgrade to version 2.0.3 or later",
+      "cwe": [
+        "CWE-1321"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1094089,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2022-37601\n- https://github.com/webpack/loader-utils/issues/212\n- https://github.com/webpack/loader-utils/releases/tag/v2.0.3\n- https://github.com/webpack/loader-utils/pull/217\n- https://github.com/webpack/loader-utils/pull/220\n- https://github.com/webpack/loader-utils/releases/tag/v1.4.1\n- https://github.com/webpack/loader-utils/issues/212#issuecomment-1319192884\n- https://github.com/xmldom/xmldom/issues/436#issuecomment-1319412826\n- https://dl.acm.org/doi/abs/10.1145/3488932.3497769\n- https://dl.acm.org/doi/pdf/10.1145/3488932.3497769\n- https://lists.debian.org/debian-lts-announce/2022/12/msg00044.html\n- http://users.encs.concordia.ca/~mmannan/publications/JS-vulnerability-aisaccs2022.pdf\n- https://github.com/webpack/loader-utils/commit/f4e48a232fae900237c3e5ff7b57ce9e1c734de1\n- https://github.com/webpack/loader-utils/commit/4504e34c4796a5836ef70458327351675aed48a5\n- https://github.com/webpack/loader-utils/commit/a93cf6f4702012030f6b5ee8340d5c95ec1c7d4c\n- https://github.com/advisories/GHSA-76p3-8jx3-jpfq",
+      "created": "2022-10-13T12:00:28.000Z",
+      "reported_by": null,
+      "title": "Prototype pollution in webpack loader-utils",
+      "npm_advisory_id": null,
+      "overview": "Prototype pollution vulnerability in function parseQuery in parseQuery.js in webpack loader-utils prior to version 2.0.3 via the name variable in parseQuery.js.",
+      "url": "https://github.com/advisories/GHSA-76p3-8jx3-jpfq"
+    },
+    "1094090": {
+      "findings": [
+        {
+          "version": "3.0.0",
+          "paths": [
+            "jest-coverage-ratchet>yargs>string-width>strip-ansi>ansi-regex"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": ">=3.0.0 <3.0.1",
+      "module_name": "ansi-regex",
+      "severity": "high",
+      "github_advisory_id": "GHSA-93q8-gq69-wqmw",
+      "cves": [
+        "CVE-2021-3807"
+      ],
+      "access": "public",
+      "patched_versions": ">=3.0.1",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "updated": "2023-09-21T22:14:52.000Z",
+      "recommendation": "Upgrade to version 3.0.1 or later",
+      "cwe": [
+        "CWE-697",
+        "CWE-1333"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1094090,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2021-3807\n- https://github.com/chalk/ansi-regex/commit/8d1d7cdb586269882c4bdc1b7325d0c58c8f76f9\n- https://huntr.dev/bounties/5b3cf33b-ede0-4398-9974-800876dfd994\n- https://github.com/chalk/ansi-regex/issues/38#issuecomment-924086311\n- https://app.snyk.io/vuln/SNYK-JS-ANSIREGEX-1583908\n- https://github.com/chalk/ansi-regex/issues/38#issuecomment-925924774\n- https://github.com/chalk/ansi-regex/releases/tag/v6.0.1\n- https://www.oracle.com/security-alerts/cpuapr2022.html\n- https://security.netapp.com/advisory/ntap-20221014-0002/\n- https://github.com/chalk/ansi-regex/commit/419250fa510bf31b4cc672e76537a64f9332e1f1\n- https://github.com/chalk/ansi-regex/commit/75a657da7af875b2e2724fd6331bf0a4b23d3c9a\n- https://github.com/chalk/ansi-regex/commit/c3c0b3f2736b9c01feec0fef33980c43720dcde8\n- https://github.com/advisories/GHSA-93q8-gq69-wqmw",
+      "created": "2021-09-20T20:20:09.000Z",
+      "reported_by": null,
+      "title": "Inefficient Regular Expression Complexity in chalk/ansi-regex",
+      "npm_advisory_id": null,
+      "overview": "ansi-regex is vulnerable to Inefficient Regular Expression Complexity which could lead to a denial of service when parsing invalid ANSI escape codes.\n\n**Proof of Concept**\n```js\nimport ansiRegex from 'ansi-regex';\nfor(var i = 1; i <= 50000; i++) {\n    var time = Date.now();\n    var attack_str = \"\\u001B[\"+\";\".repeat(i*10000);\n    ansiRegex().test(attack_str)\n    var time_cost = Date.now() - time;\n    console.log(\"attack_str.length: \" + attack_str.length + \": \" + time_cost+\" ms\")\n}\n```\nThe ReDOS is mainly due to the sub-patterns `[[\\\\]()#;?]*` and `(?:;[-a-zA-Z\\\\d\\\\/#&.:=?%@~_]*)*`",
+      "url": "https://github.com/advisories/GHSA-93q8-gq69-wqmw"
+    },
+    "1094291": {
+      "findings": [
+        {
+          "version": "9.0.0",
+          "paths": [
+            "codelyzer>@angular/core"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<10.2.5",
+      "module_name": "@angular/core",
+      "severity": "moderate",
+      "github_advisory_id": "GHSA-c75v-2vq8-878f",
+      "cves": [
+        "CVE-2021-4231"
+      ],
+      "access": "public",
+      "patched_versions": ">=10.2.5",
+      "cvss": {
+        "score": 5.4,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+      },
+      "updated": "2023-10-10T19:57:51.000Z",
+      "recommendation": "Upgrade to version 10.2.5 or later",
+      "cwe": [
+        "CWE-79"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1094291,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2021-4231\n- https://github.com/angular/angular/issues/40136\n- https://github.com/angular/angular/commit/ba8da742e3b243e8f43d4c63aa842b44e14f2b09\n- https://security.snyk.io/vuln/SNYK-JS-ANGULARCORE-1070902\n- https://vuldb.com/?id.181356\n- https://github.com/angular/angular/commit/0aa220bc0000fc4d1651ec388975bbf5baa1da36\n- https://github.com/angular/angular/commit/47d9b6d72dab9d60c96bc1c3604219f6385649ea\n- https://github.com/advisories/GHSA-c75v-2vq8-878f",
+      "created": "2022-05-27T00:01:08.000Z",
+      "reported_by": null,
+      "title": "Cross site scripting in Angular",
+      "npm_advisory_id": null,
+      "overview": "A vulnerability was found in Angular up to 11.0.4/11.1.0-next.2. It has been classified as problematic. Affected is the handling of comments. The manipulation leads to cross site scripting. It is possible to launch the attack remotely but it might require an authentication first. Upgrading to version 10.2.5, 11.0.5 or 11.1.0-next.3 is advised to to address this issue.",
+      "url": "https://github.com/advisories/GHSA-c75v-2vq8-878f"
+    },
+    "1094304": {
+      "findings": [
+        {
+          "version": "8.2.15",
+          "paths": [
+            "@angular-devkit/build-angular>postcss"
+          ]
+        },
+        {
+          "version": "7.0.39",
+          "paths": [
+            "@angular-devkit/build-angular>resolve-url-loader>postcss"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<8.4.31",
+      "module_name": "postcss",
+      "severity": "moderate",
+      "github_advisory_id": "GHSA-7fh5-64p2-3v2j",
+      "cves": [
+        "CVE-2023-44270"
+      ],
+      "access": "public",
+      "patched_versions": ">=8.4.31",
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+      },
+      "updated": "2023-10-10T21:32:38.000Z",
+      "recommendation": "Upgrade to version 8.4.31 or later",
+      "cwe": [
+        "CWE-74",
+        "CWE-144"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1094304,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2023-44270\n- https://github.com/postcss/postcss/commit/58cc860b4c1707510c9cd1bc1fa30b423a9ad6c5\n- https://github.com/postcss/postcss/blob/main/lib/tokenize.js#L25\n- https://github.com/postcss/postcss/releases/tag/8.4.31\n- https://github.com/github/advisory-database/issues/2820\n- https://github.com/advisories/GHSA-7fh5-64p2-3v2j",
+      "created": "2023-09-30T00:31:10.000Z",
+      "reported_by": null,
+      "title": "PostCSS line return parsing error",
+      "npm_advisory_id": null,
+      "overview": "An issue was discovered in PostCSS before 8.4.31. It affects linters using PostCSS to parse external Cascading Style Sheets (CSS). There may be `\\r` discrepancies, as demonstrated by `@font-face{ font:(\\r/*);}` in a rule.\n\nThis vulnerability affects linters using PostCSS to parse external untrusted CSS. An attacker can prepare CSS in such a way that it will contains parts parsed by PostCSS as a CSS comment. After processing by PostCSS, it will be included in the PostCSS output in CSS nodes (rules, properties) despite being originally included in a comment.",
+      "url": "https://github.com/advisories/GHSA-7fh5-64p2-3v2j"
+    }
+  },
+  "muted": [],
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 2,
+      "moderate": 96,
+      "high": 48,
+      "critical": 7
+    },
+    "dependencies": 209,
+    "devDependencies": 2880,
+    "optionalDependencies": 49,
+    "totalDependencies": 3090
+  },
+  "runId": "eb293fef-d298-4d2b-bac9-40bfc385a646"
+}
