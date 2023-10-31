@@ -1,15 +1,29 @@
 {
   "name": "npm-audit-plus-plus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tool to capture the output of npm audit and convert it to xml",
   "main": "src/cli.js",
+  "bin": {
+    "npm-audit-plus-plus": "src/cli.js"
+  },
   "scripts": {
     "test": "cat fixtures/audit.json | node src/cli.js",
     "test-ok": "cat fixtures/audit-ok.json | node src/cli.js",
     "test-critical": "cat fixtures/audit-criticals.json | node src/cli.js",
     "start": "node src/cli.js"
   },
-  "keywords": [],
+  "keywords": [
+    "npm",
+    "audit",
+    "xml",
+    "gitlab",
+    "pipeline",
+    "security",
+    "dependency management",
+    "ignore",
+    "vulnerabilities",
+    "continuous integration"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
