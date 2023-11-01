@@ -75,19 +75,12 @@ program
                 "@name": "Summary: Critical: ".concat(critCount, ", High: ").concat(highCount, ", Moderate: ").concat(modCount, ", Low: ").concat(lowCount, ", Info: ").concat(infoCount, ", Dependencies: ").concat(depCount),
                 failure: {
                     "@message": "Summary: Critical: ".concat(critCount, ", High: ").concat(highCount, ", Moderate: ").concat(modCount, ", Low: ").concat(lowCount, ", Info: ").concat(infoCount, ", Dependencies: ").concat(depCount),
-                }
+                },
             },
         ];
         for (var advisory in input.advisories) {
-            testcase.push({
-                "@name": input.advisories[advisory].severity +
-                    ":" +
-                    input.advisories[advisory].module_name +
-                    "@" +
-                    input.advisories[advisory].vulnerable_versions +
-                    ": " +
-                    input.advisories[advisory].title,
-                failure: {
+            var failure = input.advisories[advisory].severity === "critical"
+                ? {
                     "@message": input.advisories[advisory].title +
                         " - " +
                         input.advisories[advisory].findings[0].version +
@@ -95,15 +88,25 @@ program
                         input.advisories[advisory].findings[0].paths[0],
                     "@type": "error",
                     "#text": input.advisories[advisory].overview,
-                },
+                }
+                : null;
+            testcase.push({
+                "@name": input.advisories[advisory].title,
+                "@classname": input.advisories[advisory].module_name +
+                    "@" +
+                    input.advisories[advisory].vulnerable_versions +
+                    " (" +
+                    input.advisories[advisory].severity +
+                    ")",
+                failure: failure,
             });
         }
         var obj = {
             testsuites: {
                 testsuite: {
                     "@name": "NPM Audit Summary",
-                    "@errors": 0,
-                    "@failures": critCount + highCount + modCount + lowCount + infoCount,
+                    "@errors": critCount,
+                    "@failures": critCount,
                     "@tests": critCount + highCount + modCount + lowCount + infoCount,
                     testcase: testcase,
                 },

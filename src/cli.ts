@@ -118,30 +118,34 @@ program
           "@name": `Summary: Critical: ${critCount}, High: ${highCount}, Moderate: ${modCount}, Low: ${lowCount}, Info: ${infoCount}, Dependencies: ${depCount}`,
           failure: {
             "@message": `Summary: Critical: ${critCount}, High: ${highCount}, Moderate: ${modCount}, Low: ${lowCount}, Info: ${infoCount}, Dependencies: ${depCount}`,
-          }
+          },
         },
       ];
 
       for (const advisory in input.advisories) {
+        const failure =
+          input.advisories[advisory].severity === "critical"
+            ? {
+                "@message":
+                  input.advisories[advisory].title +
+                  " - " +
+                  input.advisories[advisory].findings[0].version +
+                  " - " +
+                  input.advisories[advisory].findings[0].paths[0],
+                "@type": "error",
+                "#text": input.advisories[advisory].overview,
+              }
+            : null;
         testcase.push({
-          "@name":
-            input.advisories[advisory].severity +
-            ":" +
+          "@name": input.advisories[advisory].title,
+          "@classname":
             input.advisories[advisory].module_name +
             "@" +
             input.advisories[advisory].vulnerable_versions +
-            ": " +
-            input.advisories[advisory].title,
-          failure: {
-            "@message":
-              input.advisories[advisory].title +
-              " - " +
-              input.advisories[advisory].findings[0].version +
-              " - " +
-              input.advisories[advisory].findings[0].paths[0],
-            "@type": "error",
-            "#text": input.advisories[advisory].overview,
-          },
+            " (" +
+            input.advisories[advisory].severity +
+            ")",
+          failure,
         } as any);
       }
 
@@ -149,9 +153,8 @@ program
         testsuites: {
           testsuite: {
             "@name": "NPM Audit Summary",
-            "@errors": 0,
-            "@failures":
-              critCount + highCount + modCount + lowCount + infoCount,
+            "@errors": critCount,
+            "@failures": critCount,
             "@tests": critCount + highCount + modCount + lowCount + infoCount,
             testcase,
           },
