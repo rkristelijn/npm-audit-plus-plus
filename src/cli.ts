@@ -42,7 +42,7 @@ program
   .description(
     "A tool to capture the output of npm audit and convert it to xml"
   )
-  .version("1.0.10");
+  .version("1.0.12");
 
 program
   .description("npm audit --json | npx npm-audit-plus-plus")
@@ -137,7 +137,12 @@ program
               }
             : null;
         testcase.push({
-          "@name": input.advisories[advisory].title,
+          "@name":
+            input.advisories[advisory].title +
+            "\n" +
+            input.advisories[advisory].overview +
+            "\n" +
+            (input.advisories[advisory] as any).references,
           "@classname":
             input.advisories[advisory].module_name +
             "@" +

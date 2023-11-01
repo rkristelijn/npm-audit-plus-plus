@@ -1,6 +1,6 @@
 {
   "name": "npm-audit-plus-plus",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "A tool to capture the output of npm audit and convert it to xml",
   "main": "src/cli.ts",
   "bin": {
