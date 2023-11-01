@@ -7,7 +7,7 @@ var xmlbuilder2_1 = require("xmlbuilder2");
 program
     .name("npm-audit-plus-plus")
     .description("A tool to capture the output of npm audit and convert it to xml")
-    .version("1.0.9");
+    .version("1.0.10");
 program
     .description("npm audit --json | npx npm-audit-plus-plus")
     .option("--debug", "display debug information")
@@ -73,6 +73,9 @@ program
         var testcase = [
             {
                 "@name": "Summary: Critical: ".concat(critCount, ", High: ").concat(highCount, ", Moderate: ").concat(modCount, ", Low: ").concat(lowCount, ", Info: ").concat(infoCount, ", Dependencies: ").concat(depCount),
+                failure: {
+                    "@message": "Summary: Critical: ".concat(critCount, ", High: ").concat(highCount, ", Moderate: ").concat(modCount, ", Low: ").concat(lowCount, ", Info: ").concat(infoCount, ", Dependencies: ").concat(depCount),
+                }
             },
         ];
         for (var advisory in input.advisories) {
@@ -96,7 +99,7 @@ program
             });
         }
         var obj = {
-            testsuits: {
+            testsuites: {
                 testsuite: {
                     "@name": "NPM Audit Summary",
                     "@errors": 0,
