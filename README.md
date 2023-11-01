@@ -17,7 +17,7 @@ Instead of npx you could use `npm i -D npm-audit-plus-plus@latest -f` to force t
 ```json
 {
   "scripts": {
-    "ci:audit": "npm audit --json --omit=dev | npm-audit-plus-plus > npm-audit.junit.xml"
+    "ci:audit": "npm audit --json --production | npm-audit-plus-plus > npm-audit.junit.xml"
   }
 }
 ```

@@ -33,6 +33,7 @@ interface Input {
       module_name: string;
       vulnerable_versions: string;
       overview: string;
+      references: string;
     };
   };
 }
@@ -42,7 +43,7 @@ program
   .description(
     "A tool to capture the output of npm audit and convert it to xml"
   )
-  .version("1.0.13");
+  .version("1.0.14");
 
 program
   .description("npm audit --json | npx npm-audit-plus-plus")
@@ -115,7 +116,7 @@ program
       // else, some vulnerabilities were found, create failure XML
       const testcase = [
         {
-          classname: "Summary",
+          "@classname": "Summary",
           "@name": `Critical: ${critCount}, High: ${highCount}, Moderate: ${modCount}, Low: ${lowCount}, Info: ${infoCount}, Dependencies: ${depCount}`,
         },
       ];
@@ -140,7 +141,7 @@ program
             "\n" +
             input.advisories[advisory].overview +
             "\n" +
-            (input.advisories[advisory] as any).references,
+            input.advisories[advisory].references,
           "@classname":
             input.advisories[advisory].module_name +
             "@" +

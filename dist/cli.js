@@ -7,7 +7,7 @@ var xmlbuilder2_1 = require("xmlbuilder2");
 program
     .name("npm-audit-plus-plus")
     .description("A tool to capture the output of npm audit and convert it to xml")
-    .version("1.0.13");
+    .version("1.0.14");
 program
     .description("npm audit --json | npx npm-audit-plus-plus")
     .option("--debug", "display debug information")
@@ -72,7 +72,7 @@ program
         // else, some vulnerabilities were found, create failure XML
         var testcase = [
             {
-                classname: "Summary",
+                "@classname": "Summary",
                 "@name": "Critical: ".concat(critCount, ", High: ").concat(highCount, ", Moderate: ").concat(modCount, ", Low: ").concat(lowCount, ", Info: ").concat(infoCount, ", Dependencies: ").concat(depCount),
             },
         ];
