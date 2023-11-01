@@ -41,7 +41,7 @@ interface Input {
 program
   .name("npm-audit-plus-plus")
   .description("A tool to capture the output of npm audit and convert it to xml")
-  .version("1.0.6");
+  .version("1.0.7");
 
 program
   .description("npm audit --json | npx npm-audit-plus-plus")

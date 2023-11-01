@@ -1,11 +1,13 @@
-import { Command } from "commander";
-const program = new Command();
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const commander_1 = require("commander");
+const program = new commander_1.Command();
 // import * as packageJson from "#package.json";
-import { create } from "xmlbuilder2";
+const xmlbuilder2_1 = require("xmlbuilder2");
 program
     .name("npm-audit-plus-plus")
     .description("A tool to capture the output of npm audit and convert it to xml")
-    .version("1.0.6");
+    .version("1.0.7");
 program
     .description("npm audit --json | npx npm-audit-plus-plus")
     .option("--debug", "display debug information")
@@ -52,7 +54,7 @@ program
             modCount === 0 &&
             lowCount === 0 &&
             infoCount === 0) {
-            const empty = create({ version: "1.0" })
+            const empty = (0, xmlbuilder2_1.create)({ version: "1.0" })
                 .ele("testsuits")
                 .ele("testsuite", {
                 name: "NPM Audit Summary",
@@ -104,7 +106,7 @@ program
                 },
             },
         };
-        const doc = create(obj);
+        const doc = (0, xmlbuilder2_1.create)(obj);
         const xml = doc.end({ prettyPrint: true });
         console.log(xml);
         if (critCount > 0) {
