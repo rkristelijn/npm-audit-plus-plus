@@ -1,13 +1,12 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
+    "esModuleInterop": false,
     "forceConsistentCasingInFileNames": true,
     "module": "CommonJS",
     "outDir": "dist",
-    "resolveJsonModule": true,
     "rootDir": "src",
     "skipLibCheck": true,
     "strict": true,
-    "target": "ES6"
+    "target": "ES5"
   }
 }

@@ -42,7 +42,7 @@ program
   .description(
     "A tool to capture the output of npm audit and convert it to xml"
   )
-  .version("1.0.8");
+  .version("1.0.9");
 
 program
   .description("npm audit --json | npx npm-audit-plus-plus")

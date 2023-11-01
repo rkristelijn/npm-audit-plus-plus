@@ -1,28 +1,28 @@
 #!/usr/bin/env node
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const commander_1 = require("commander");
-const program = new commander_1.Command();
-const xmlbuilder2_1 = require("xmlbuilder2");
+var commander_1 = require("commander");
+var program = new commander_1.Command();
+var xmlbuilder2_1 = require("xmlbuilder2");
 program
     .name("npm-audit-plus-plus")
     .description("A tool to capture the output of npm audit and convert it to xml")
-    .version("1.0.8");
+    .version("1.0.9");
 program
     .description("npm audit --json | npx npm-audit-plus-plus")
     .option("--debug", "display debug information")
-    .action(() => {
+    .action(function () {
     // read the options
-    const options = program.opts();
+    var options = program.opts();
     // read the input
     process.stdin.resume();
-    let rawInput = "";
-    process.stdin.on("data", (input) => {
+    var rawInput = "";
+    process.stdin.on("data", function (input) {
         rawInput += input;
     });
     // when input ends, parse the file
-    process.stdin.on("end", () => {
-        let input;
+    process.stdin.on("end", function () {
+        var input;
         try {
             input = JSON.parse(rawInput);
         }
@@ -31,12 +31,12 @@ program
             console.log(e);
             process.exit(1);
         }
-        const critCount = input.metadata.vulnerabilities.critical;
-        const highCount = input.metadata.vulnerabilities.high;
-        const modCount = input.metadata.vulnerabilities.moderate;
-        const lowCount = input.metadata.vulnerabilities.low;
-        const infoCount = input.metadata.vulnerabilities.info;
-        const depCount = input.metadata.dependencies;
+        var critCount = input.metadata.vulnerabilities.critical;
+        var highCount = input.metadata.vulnerabilities.high;
+        var modCount = input.metadata.vulnerabilities.moderate;
+        var lowCount = input.metadata.vulnerabilities.low;
+        var infoCount = input.metadata.vulnerabilities.info;
+        var depCount = input.metadata.dependencies;
         if (options.debug) {
             console.log(input);
             console.log({
@@ -54,7 +54,7 @@ program
             modCount === 0 &&
             lowCount === 0 &&
             infoCount === 0) {
-            const empty = (0, xmlbuilder2_1.create)({ version: "1.0" })
+            var empty = (0, xmlbuilder2_1.create)({ version: "1.0" })
                 .ele("testsuits")
                 .ele("testsuite", {
                 name: "NPM Audit Summary",
@@ -63,19 +63,19 @@ program
                 tests: 1,
             })
                 .ele("testcase", {
-                name: `Critical: 0, High: 0, Moderate: 0, Low: 0, Info: 0, Dependencies: ${depCount}`,
+                name: "Critical: 0, High: 0, Moderate: 0, Low: 0, Info: 0, Dependencies: ".concat(depCount),
             });
-            const xml = empty.end({ prettyPrint: true });
-            console.log(xml);
+            var xml_1 = empty.end({ prettyPrint: true });
+            console.log(xml_1);
             process.exit(0);
         }
         // else, some vulnerabilities were found, create failure XML
-        const testcase = [
+        var testcase = [
             {
-                "@name": `Summary: Critical: ${critCount}, High: ${highCount}, Moderate: ${modCount}, Low: ${lowCount}, Info: ${infoCount}, Dependencies: ${depCount}`,
+                "@name": "Summary: Critical: ".concat(critCount, ", High: ").concat(highCount, ", Moderate: ").concat(modCount, ", Low: ").concat(lowCount, ", Info: ").concat(infoCount, ", Dependencies: ").concat(depCount),
             },
         ];
-        for (const advisory in input.advisories) {
+        for (var advisory in input.advisories) {
             testcase.push({
                 "@name": input.advisories[advisory].severity +
                     ":" +
@@ -95,19 +95,19 @@ program
                 },
             });
         }
-        const obj = {
+        var obj = {
             testsuits: {
                 testsuite: {
                     "@name": "NPM Audit Summary",
                     "@errors": 0,
                     "@failures": critCount + highCount + modCount + lowCount + infoCount,
                     "@tests": critCount + highCount + modCount + lowCount + infoCount,
-                    testcase,
+                    testcase: testcase,
                 },
             },
         };
-        const doc = (0, xmlbuilder2_1.create)(obj);
-        const xml = doc.end({ prettyPrint: true });
+        var doc = (0, xmlbuilder2_1.create)(obj);
+        var xml = doc.end({ prettyPrint: true });
         console.log(xml);
         if (critCount > 0) {
             process.exit(1);
