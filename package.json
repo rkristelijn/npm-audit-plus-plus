@@ -10,6 +10,7 @@
     "test": "cat fixtures/audit.json | node dist/cli.js",
     "test-ok": "cat fixtures/audit-ok.json | node dist/cli.js",
     "test-critical": "cat fixtures/audit-criticals.json | node dist/cli.js",
+    "test-v2": "cat fixtures/audit-v2.json | node dist/cli.js",
     "build": "tsc"
   },
   "keywords": [
