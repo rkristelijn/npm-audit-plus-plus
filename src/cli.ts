@@ -1,14 +1,47 @@
-const { Command } = require("commander");
+import { Command } from "commander";
 const program = new Command();
 
-const packageJson = require("../package.json");
+// import * as packageJson from "#package.json";
 
-const { create } = require("xmlbuilder2");
+import { create } from "xmlbuilder2";
+
+interface Input {
+  metadata: {
+    vulnerabilities: {
+      critical: number;
+      high: number;
+      moderate: number;
+      low: number;
+      info: number;
+    };
+    dependencies: number;
+  };
+  advisories: {
+    [key: string]: {
+      findings: {
+        version: string;
+        paths: string[];
+      }[];
+      id: number;
+      created: string;
+      updated: string;
+      deleted: string;
+      title: string;
+      found_by: {
+        link: string;
+      };
+      severity: string;
+      module_name: string;
+      vulnerable_versions: string;
+      overview: string;
+    };
+  };
+}
 
 program
-  .name(packageJson.name)
-  .description(packageJson.description)
-  .version(packageJson.version);
+  .name("npm-audit-plus-plus")
+  .description("A tool to capture the output of npm audit and convert it to xml")
+  .version("1.0.6");
 
 program
   .description("npm audit --json | npx npm-audit-plus-plus")
@@ -26,7 +59,7 @@ program
 
     // when input ends, parse the file
     process.stdin.on("end", () => {
-      let input = "";
+      let input: Input;
       try {
         input = JSON.parse(rawInput);
       } catch (e) {
@@ -105,7 +138,7 @@ program
             "@type": "error",
             "#text": input.advisories[advisory].overview,
           },
-        });
+        } as any);
       }
 
       const obj = {
