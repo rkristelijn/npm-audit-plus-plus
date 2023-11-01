@@ -42,7 +42,7 @@ program
   .description(
     "A tool to capture the output of npm audit and convert it to xml"
   )
-  .version("1.0.12");
+  .version("1.0.13");
 
 program
   .description("npm audit --json | npx npm-audit-plus-plus")
@@ -115,10 +115,8 @@ program
       // else, some vulnerabilities were found, create failure XML
       const testcase = [
         {
-          "@name": `Summary: Critical: ${critCount}, High: ${highCount}, Moderate: ${modCount}, Low: ${lowCount}, Info: ${infoCount}, Dependencies: ${depCount}`,
-          failure: {
-            "@message": `Summary: Critical: ${critCount}, High: ${highCount}, Moderate: ${modCount}, Low: ${lowCount}, Info: ${infoCount}, Dependencies: ${depCount}`,
-          },
+          classname: "Summary",
+          "@name": `Critical: ${critCount}, High: ${highCount}, Moderate: ${modCount}, Low: ${lowCount}, Info: ${infoCount}, Dependencies: ${depCount}`,
         },
       ];
 
