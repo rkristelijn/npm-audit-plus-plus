@@ -1,8 +1,7 @@
+#!/usr/bin/env node
+
 import { Command } from "commander";
 const program = new Command();
-
-// import * as packageJson from "#package.json";
-
 import { create } from "xmlbuilder2";
 
 interface Input {
@@ -40,8 +39,10 @@ interface Input {
 
 program
   .name("npm-audit-plus-plus")
-  .description("A tool to capture the output of npm audit and convert it to xml")
-  .version("1.0.7");
+  .description(
+    "A tool to capture the output of npm audit and convert it to xml"
+  )
+  .version("1.0.8");
 
 program
   .description("npm audit --json | npx npm-audit-plus-plus")
