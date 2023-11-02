@@ -3,7 +3,7 @@
 This is a tool to help report `npm audit` in xml format for e.g. CI/CD for gitlab.
 
 ```
-npm audit | npx npm-audit-plus-plus > npm-audit-plus-plus.xml
+npm audit --json | npx npm-audit-plus-plus > npm-audit-plus-plus.xml
 npm audit --production --json | npx npm-audit-plus-plus > npm-audit-plus-plus.xml
 npm audit --omit=dev --json | npx npm-audit-plus-plus > npm-audit-plus-plus.xml
 ```
@@ -22,6 +22,11 @@ Instead of npx you could use `npm i -D npm-audit-plus-plus@latest -f` to force t
 }
 ```
 
+## Developing
+- `npm i` - to install dependencies
+- `npm t` - to parse all json files in `test/fixtures`. See if the changes are still valid.
+
 ## Docs
 
 - [JUnit XML format](https://www.ibm.com/docs/en/developer-for-zos/14.1?topic=formats-junit-xml-format)
+- [Gitlab JUnit parser info](https://gitlab.com/gitlab-org/gitlab/-/issues/299086)

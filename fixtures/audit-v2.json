@@ -1,0 +1,251 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "@angular-devkit/build-angular": {
+      "name": "@angular-devkit/build-angular",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "resolve-url-loader"
+      ],
+      "effects": [
+        "@nrwl/angular"
+      ],
+      "range": ">=13.2.0-next.0",
+      "nodes": [
+        "node_modules/@angular-devkit/build-angular"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "13.1.4",
+        "isSemVerMajor": true
+      }
+    },
+    "@cypress/request": {
+      "name": "@cypress/request",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1092971,
+          "name": "@cypress/request",
+          "dependency": "@cypress/request",
+          "title": "Server-Side Request Forgery in Request",
+          "url": "https://github.com/advisories/GHSA-p8p7-x288-28g6",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-918"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=2.88.12"
+        }
+      ],
+      "effects": [
+        "cypress"
+      ],
+      "range": "<=2.88.12",
+      "nodes": [
+        "node_modules/@cypress/request"
+      ],
+      "fixAvailable": {
+        "name": "cypress",
+        "version": "13.4.0",
+        "isSemVerMajor": true
+      }
+    },
+    "@nrwl/angular": {
+      "name": "@nrwl/angular",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular-devkit/build-angular",
+        "@nrwl/webpack"
+      ],
+      "effects": [],
+      "range": "14.7.6-beta.0 - 16.0.0-rc.1",
+      "nodes": [
+        "node_modules/@nrwl/angular"
+      ],
+      "fixAvailable": {
+        "name": "@nrwl/angular",
+        "version": "17.0.2",
+        "isSemVerMajor": true
+      }
+    },
+    "@nrwl/webpack": {
+      "name": "@nrwl/webpack",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "file-loader"
+      ],
+      "effects": [
+        "@nrwl/angular"
+      ],
+      "range": "<=16.0.0-rc.1",
+      "nodes": [
+        "node_modules/@nrwl/webpack"
+      ],
+      "fixAvailable": {
+        "name": "@nrwl/angular",
+        "version": "17.0.2",
+        "isSemVerMajor": true
+      }
+    },
+    "adjust-sourcemap-loader": {
+      "name": "adjust-sourcemap-loader",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "loader-utils"
+      ],
+      "effects": [
+        "resolve-url-loader"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/adjust-sourcemap-loader"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "13.1.4",
+        "isSemVerMajor": true
+      }
+    },
+    "cypress": {
+      "name": "cypress",
+      "severity": "moderate",
+      "isDirect": true,
+      "via": [
+        "@cypress/request"
+      ],
+      "effects": [],
+      "range": "4.3.0 - 12.17.4",
+      "nodes": [
+        "node_modules/cypress"
+      ],
+      "fixAvailable": {
+        "name": "cypress",
+        "version": "13.4.0",
+        "isSemVerMajor": true
+      }
+    },
+    "file-loader": {
+      "name": "file-loader",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "loader-utils"
+      ],
+      "effects": [
+        "@nrwl/webpack"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/file-loader"
+      ],
+      "fixAvailable": {
+        "name": "@nrwl/angular",
+        "version": "17.0.2",
+        "isSemVerMajor": true
+      }
+    },
+    "loader-utils": {
+      "name": "loader-utils",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1092999,
+          "name": "loader-utils",
+          "dependency": "loader-utils",
+          "title": "loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS) via url variable",
+          "url": "https://github.com/advisories/GHSA-3rfm-jhwj-7488",
+          "severity": "high",
+          "cwe": [
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=2.0.0 <2.0.4"
+        },
+        {
+          "source": 1094083,
+          "name": "loader-utils",
+          "dependency": "loader-utils",
+          "title": "loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS)",
+          "url": "https://github.com/advisories/GHSA-hhq3-ff78-jv3g",
+          "severity": "high",
+          "cwe": [
+            "CWE-400"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=2.0.0 <2.0.4"
+        }
+      ],
+      "effects": [
+        "adjust-sourcemap-loader",
+        "file-loader",
+        "resolve-url-loader"
+      ],
+      "range": "2.0.0 - 2.0.3",
+      "nodes": [
+        "node_modules/adjust-sourcemap-loader/node_modules/loader-utils",
+        "node_modules/file-loader/node_modules/loader-utils",
+        "node_modules/resolve-url-loader/node_modules/loader-utils"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "13.1.4",
+        "isSemVerMajor": true
+      }
+    },
+    "resolve-url-loader": {
+      "name": "resolve-url-loader",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "adjust-sourcemap-loader",
+        "loader-utils"
+      ],
+      "effects": [
+        "@angular-devkit/build-angular"
+      ],
+      "range": ">=4.0.0-alpha.1",
+      "nodes": [
+        "node_modules/resolve-url-loader"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "13.1.4",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 2,
+      "high": 7,
+      "critical": 0,
+      "total": 9
+    },
+    "dependencies": {
+      "prod": 1533,
+      "dev": 1094,
+      "optional": 71,
+      "peer": 29,
+      "peerOptional": 0,
+      "total": 2649
+    }
+  }
+}

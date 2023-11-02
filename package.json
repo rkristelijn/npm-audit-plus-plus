@@ -1,15 +1,20 @@
 {
   "name": "npm-audit-plus-plus",
-  "version": "1.0.14",
+  "version": "1.1.0",
   "description": "A tool to capture the output of npm audit and convert it to xml",
   "main": "src/cli.ts",
   "bin": {
     "npm-audit-plus-plus": "dist/cli.js"
   },
   "scripts": {
-    "test": "cat fixtures/audit.json | node dist/cli.js",
-    "test-ok": "cat fixtures/audit-ok.json | node dist/cli.js",
-    "test-critical": "cat fixtures/audit-criticals.json | node dist/cli.js",
+    "predebug": "npm run build",
+    "debug": "cat fixtures/audit-v2.json | node dist/cli.js --debug > fixtures/audit-v2.xml",
+    "pretest": "npm run build",
+    "test": "concurrently npm:test:*",
+    "test:plain": "cat fixtures/audit.json | node dist/cli.js > fixtures/audit.xml",
+    "test:ok": "cat fixtures/audit-ok.json | node dist/cli.js > fixtures/audit-ok.xml",
+    "test:critical": "cat fixtures/audit-criticals.json | node dist/cli.js > fixtures/audit-criticals.xml",
+    "test:v2": "cat fixtures/audit-v2.json | node dist/cli.js > fixtures/audit-v2.xml",
     "build": "tsc"
   },
   "keywords": [
@@ -35,6 +40,7 @@
     "@babel/core": "^7.23.2",
     "@babel/preset-env": "^7.23.2",
     "@types/node": "^20.8.10",
+    "concurrently": "^8.2.2",
     "typescript": "^5.2.2"
   },
   "repository": {

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<testsuits>
+  <testsuite name="NPM Audit Summary v1" errors="0" failures="0" tests="1">
+    <testcase classname="Summary" name="Critical: 0, High: 0, Moderate: 0, Low: 0, Info: 0, Dependencies: 0"/>
+  </testsuite>
+</testsuits>

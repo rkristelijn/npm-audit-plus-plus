@@ -1,0 +1,7 @@
+<testsuites>
+   <testsuite name="" tests="Summary:Total" failures="Summary:Failed" errors="Summary:Errors" skipped="Summary:Skipped"> <!-- Summary:Passed is calculated?, Summary:Duration: sum of duration in tests? -->
+      <testcase classname="Report:Suite" name="Report:Name" file="Report:Filename" time="Report:Duration?"/>
+         <failure type="failure|error">myFailure</failure> <!-- unsure what is the difference between failure|error, when you leave failure out, it is success -->
+      </testcase>
+   </testsuite>
+</testsuites>
