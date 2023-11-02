@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <testsuites>
   <testsuite name="NPM Audit Summary" errors="7" failures="7" tests="153">
-    <testcase classname="Summary" name="Critical: 7, High: 48, Moderate: 96, Low: 2, Info: 0, Dependencies: 209"/>
+    <testcase classname="Summary" name="Critical: 7, High: 48, Moderate: 96, Low: 2, Info: 0, Dependencies: 209" time="0"/>
     <testcase name="Prototype Pollution in node-forge debug API.
 ### Impact
 The `forge.debug` API had a potential prototype pollution issue if called with untrusted input. The API was only used for internal debug purposes in a safe way and never documented or advertised.  It is suspected that uses of this API, if any exist, would likely not have used untrusted inputs in a vulnerable way.

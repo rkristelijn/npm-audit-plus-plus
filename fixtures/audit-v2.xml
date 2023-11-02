@@ -1,6 +1,18 @@
 <?xml version="1.0"?>
-<testsuits>
-  <testsuite name="NPM Audit Summary v2 (work in progress)" errors="0" failures="0" tests="1">
-    <testcase name="Critical: 0, High: 0, Moderate: 0, Low: 0, Info: 0, Dependencies: [object Object]"/>
+<testsuites>
+  <testsuite name="NPM AUdit Summary v2" errors="0" failures="0" tests="2649">
+    <testcase classname="Summary" name="Critical: 0, High: 7, Moderate: 2, Low: 0, Info: 0, Dependencies: 2649" time="0"/>
+    <testcase classname="@angular-devkit/build-angular@&gt;=13.2.0-next.0 (high)" name="resolve-url-loader@angular-devkit/build-angular" time="0"/>
+    <testcase classname="@cypress/request@&lt;=2.88.12 (moderate)" name="Server-Side Request Forgery in Request
+https://github.com/advisories/GHSA-p8p7-x288-28g6@cypress/request" time="0"/>
+    <testcase classname="@nrwl/angular@14.7.6-beta.0 - 16.0.0-rc.1 (high)" name="@angular-devkit/build-angular -&gt; @nrwl/webpack@nrwl/angular" time="0"/>
+    <testcase classname="@nrwl/webpack@&lt;=16.0.0-rc.1 (high)" name="file-loader@nrwl/webpack" time="0"/>
+    <testcase classname="adjust-sourcemap-loader@ (high)" name="loader-utilsadjust-sourcemap-loader" time="0"/>
+    <testcase classname="cypress@4.3.0 - 12.17.4 (moderate)" name="@cypress/requestcypress" time="0"/>
+    <testcase classname="file-loader@ (high)" name="loader-utilsfile-loader" time="0"/>
+    <testcase classname="loader-utils@2.0.0 - 2.0.3 (high)" name="loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS) via url variable
+https://github.com/advisories/GHSA-3rfm-jhwj-7488 -&gt; loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS)
+https://github.com/advisories/GHSA-hhq3-ff78-jv3gloader-utils" time="0"/>
+    <testcase classname="resolve-url-loader@&gt;=4.0.0-alpha.1 (high)" name="adjust-sourcemap-loader -&gt; loader-utilsresolve-url-loader" time="0"/>
   </testsuite>
-</testsuits>
+</testsuites>
