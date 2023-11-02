@@ -1,0 +1,571 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="NPM Audit Summary" errors="7" failures="7" tests="153">
+    <testcase classname="Summary" name="Critical: 7, High: 48, Moderate: 96, Low: 2, Info: 0, Dependencies: 209"/>
+    <testcase name="Prototype Pollution in node-forge debug API.
+### Impact
+The `forge.debug` API had a potential prototype pollution issue if called with untrusted input. The API was only used for internal debug purposes in a safe way and never documented or advertised.  It is suspected that uses of this API, if any exist, would likely not have used untrusted inputs in a vulnerable way.
+
+### Patches
+The `forge.debug` API and related functions were removed in 1.0.0.
+
+### Workarounds
+Don't use the `forge.debug` API directly or indirectly with untrusted input.
+
+### References
+- https://www.huntr.dev/bounties/1-npm-node-forge/
+
+### For more information
+If you have any questions or comments about this advisory:
+* Open an issue in [forge](https://github.com/digitalbazaar/forge).
+* Email us at support@digitalbazaar.com.
+- https://github.com/digitalbazaar/forge/security/advisories/GHSA-5rrq-pxf6-6jx5
+- https://github.com/advisories/GHSA-5rrq-pxf6-6jx5" classname="node-forge@&lt;1.0.0 (low)"/>
+    <testcase name="URL parsing in node-forge could lead to undesired behavior.
+### Impact
+The regex used for the `forge.util.parseUrl` API would not properly parse certain inputs resulting in a parsed data structure that could lead to undesired behavior.
+
+### Patches
+`forge.util.parseUrl` and other very old related URL APIs were removed in 1.0.0 in favor of letting applications use the more modern WHATWG URL Standard API.
+
+### Workarounds
+Ensure code does not directly or indirectly call `forge.util.parseUrl` with untrusted input.
+
+### References
+- https://www.huntr.dev/bounties/41852c50-3c6d-4703-8c55-4db27164a4ae/
+
+### For more information
+If you have any questions or comments about this advisory:
+* Open an issue in [forge](https://github.com/digitalbazaar/forge)
+* Email us at support@digitalbazaar.com
+
+- https://github.com/digitalbazaar/forge/security/advisories/GHSA-gf8q-jrpm-jvxq
+- https://nvd.nist.gov/vuln/detail/CVE-2022-0122
+- https://www.huntr.dev/bounties/41852c50-3c6d-4703-8c55-4db27164a4ae
+- https://github.com/advisories/GHSA-gf8q-jrpm-jvxq" classname="node-forge@&lt;1.0.0 (low)"/>
+    <testcase name="Improper Verification of Cryptographic Signature in `node-forge`
+### Impact
+
+RSA PKCS#1 v1.5 signature verification code is not properly checking `DigestInfo` for a proper ASN.1 structure. This can lead to successful verification with signatures that contain invalid structures but a valid digest.
+
+### Patches
+
+The issue has been addressed in `node-forge` `1.3.0`.
+
+### For more information
+
+If you have any questions or comments about this advisory:
+* Open an issue in [forge](https://github.com/digitalbazaar/forge)
+* Email us at [example email address](mailto:security@digitalbazaar.com)
+- https://github.com/digitalbazaar/forge/security/advisories/GHSA-2r2c-g63r-vccr
+- https://nvd.nist.gov/vuln/detail/CVE-2022-24773
+- https://github.com/digitalbazaar/forge/commit/3f0b49a0573ef1bb7af7f5673c0cfebf00424df1
+- https://github.com/digitalbazaar/forge/commit/bb822c02df0b61211836472e29b9790cc541cdb2
+- https://github.com/advisories/GHSA-2r2c-g63r-vccr" classname="node-forge@&lt;1.3.0 (moderate)"/>
+    <testcase name="yargs-parser Vulnerable to Prototype Pollution
+Affected versions of `yargs-parser` are vulnerable to prototype pollution. Arguments are not properly sanitized, allowing an attacker to modify the prototype of `Object`, causing the addition or modification of an existing property that will exist on all objects.  
+Parsing the argument `--foo.__proto__.bar baz'` adds a `bar` property with value `baz` to all objects. This is only exploitable if attackers have control over the arguments being passed to `yargs-parser`.
+
+
+
+## Recommendation
+
+Upgrade to versions 13.1.2, 15.0.1, 18.1.1 or later.
+- https://snyk.io/vuln/SNYK-JS-YARGSPARSER-560381
+- https://www.npmjs.com/advisories/1500
+- https://github.com/yargs/yargs-parser/commit/63810ca1ae1a24b08293a4d971e70e058c7a41e2
+- https://nvd.nist.gov/vuln/detail/CVE-2020-7608
+- https://github.com/yargs/yargs-parser/commit/1c417bd0b42b09c475ee881e36d292af4fa2cc36
+- https://github.com/advisories/GHSA-p9pc-299p-vxgp" classname="yargs-parser@&gt;=6.0.0 &lt;13.1.2 (moderate)"/>
+    <testcase name="jsonwebtoken unrestricted key type could lead to legacy keys usage 
+# Overview
+
+Versions `&lt;=8.5.1` of `jsonwebtoken` library could be misconfigured so that legacy, insecure key types are used for signature verification. For example, DSA keys could be used with the RS256 algorithm. 
+
+# Am I affected?
+
+You are affected if you are using an algorithm and a key type other than the combinations mentioned below
+
+| Key type |  algorithm                                    |
+|----------|------------------------------------------|
+| ec           | ES256, ES384, ES512                      |
+| rsa          | RS256, RS384, RS512, PS256, PS384, PS512 |
+| rsa-pss  | PS256, PS384, PS512                      |
+
+And for Elliptic Curve algorithms:
+
+| `alg` | Curve      |
+|-------|------------|
+| ES256 | prime256v1 |
+| ES384 | secp384r1  |
+| ES512 | secp521r1  |
+
+# How do I fix it?
+
+Update to version 9.0.0. This version validates for asymmetric key type and algorithm combinations. Please refer to the above mentioned algorithm / key type combinations for the valid secure configuration. After updating to version 9.0.0, If you still intend to continue with signing or verifying tokens using invalid key type/algorithm value combinations, you’ll need to set the `allowInvalidAsymmetricKeyTypes` option  to `true` in the `sign()` and/or `verify()` functions.
+
+# Will the fix impact my users?
+
+There will be no impact, if you update to version 9.0.0 and you already use a valid secure combination of key type and algorithm. Otherwise,  use the  `allowInvalidAsymmetricKeyTypes` option  to `true` in the `sign()` and `verify()` functions to continue usage of invalid key type/algorithm combination in 9.0.0 for legacy compatibility. 
+
+
+- https://github.com/auth0/node-jsonwebtoken/security/advisories/GHSA-8cf7-32gw-wr33
+- https://github.com/auth0/node-jsonwebtoken/commit/e1fa9dcc12054a8681db4e6373da1b30cf7016e3
+- https://nvd.nist.gov/vuln/detail/CVE-2022-23539
+- https://github.com/advisories/GHSA-8cf7-32gw-wr33" classname="jsonwebtoken@&lt;=8.5.1 (moderate)"/>
+    <testcase name="jsonwebtoken's insecure implementation of key retrieval function could lead to Forgeable Public/Private Tokens from RSA to HMAC
+# Overview
+
+Versions `&lt;=8.5.1` of `jsonwebtoken` library can be misconfigured so that passing a poorly implemented key retrieval function (referring to the `secretOrPublicKey` argument from the [readme link](https://github.com/auth0/node-jsonwebtoken#jwtverifytoken-secretorpublickey-options-callback)) will result in incorrect verification of tokens. There is a possibility of using a different algorithm and key combination in verification  than the one that was used to sign the tokens. Specifically, tokens signed with an asymmetric public key could be verified with a symmetric HS256 algorithm. This can lead to successful validation of forged tokens. 
+
+# Am I affected?
+
+You will be affected if your application is supporting usage of both symmetric key and asymmetric key in jwt.verify() implementation with the same key retrieval function. 
+
+# How do I fix it?
+ 
+Update to version 9.0.0.
+
+# Will the fix impact my users?
+
+There is no impact for end users
+- https://github.com/auth0/node-jsonwebtoken/security/advisories/GHSA-hjrf-2m68-5959
+- https://github.com/auth0/node-jsonwebtoken/commit/e1fa9dcc12054a8681db4e6373da1b30cf7016e3
+- https://nvd.nist.gov/vuln/detail/CVE-2022-23541
+- https://github.com/auth0/node-jsonwebtoken/releases/tag/v9.0.0
+- https://github.com/advisories/GHSA-hjrf-2m68-5959" classname="jsonwebtoken@&lt;=8.5.1 (moderate)"/>
+    <testcase name="glob-parent before 5.1.2 vulnerable to Regular Expression Denial of Service in enclosure regex
+This affects the package glob-parent before 5.1.2. The enclosure regex used to check for strings ending in enclosure containing path separator.
+- https://nvd.nist.gov/vuln/detail/CVE-2020-28469
+- https://github.com/gulpjs/glob-parent/pull/36
+- https://github.com/gulpjs/glob-parent/blob/6ce8d11f2f1ed8e80a9526b1dc8cf3aa71f43474/index.js%23L9
+- https://github.com/gulpjs/glob-parent/releases/tag/v5.1.2
+- https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBES128-1059093
+- https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1059092
+- https://snyk.io/vuln/SNYK-JS-GLOBPARENT-1016905
+- https://www.oracle.com/security-alerts/cpujan2022.html
+- https://github.com/gulpjs/glob-parent/pull/36/commits/c6db86422a9731d4f3d332ce4a81c27ea6b0ee46
+- https://github.com/advisories/GHSA-ww39-953v-wcq6" classname="glob-parent@&lt;5.1.2 (high)"/>
+    <testcase name="Improper Verification of Cryptographic Signature in node-forge
+### Impact
+
+RSA PKCS#1 v1.5 signature verification code is lenient in checking the digest algorithm structure. This can allow a crafted structure that steals padding bytes and uses unchecked portion of the PKCS#1 encoded message to forge a signature when a low public exponent is being used.
+
+### Patches
+
+The issue has been addressed in `node-forge` `1.3.0`.
+
+### References
+
+For more information, please see
+[&quot;Bleichenbacher's RSA signature forgery based on implementation error&quot;](https://mailarchive.ietf.org/arch/msg/openpgp/5rnE9ZRN1AokBVj3VqblGlP63QE/)
+by Hal Finney.
+
+### For more information
+
+If you have any questions or comments about this advisory:
+* Open an issue in [forge](https://github.com/digitalbazaar/forge)
+* Email us at [example email address](mailto:security@digitalbazaar.com)
+- https://github.com/digitalbazaar/forge/security/advisories/GHSA-cfm4-qjh2-4765
+- https://nvd.nist.gov/vuln/detail/CVE-2022-24771
+- https://github.com/digitalbazaar/forge/commit/3f0b49a0573ef1bb7af7f5673c0cfebf00424df1
+- https://github.com/digitalbazaar/forge/commit/bb822c02df0b61211836472e29b9790cc541cdb2
+- https://github.com/advisories/GHSA-cfm4-qjh2-4765" classname="node-forge@&lt;1.3.0 (high)"/>
+    <testcase name="Improper Verification of Cryptographic Signature in node-forge
+### Impact
+
+RSA PKCS#1 v1.5 signature verification code does not check for tailing garbage bytes after decoding a `DigestInfo` ASN.1 structure. This can allow padding bytes to be removed and garbage data added to forge a signature when a low public exponent is being used.
+
+### Patches
+
+The issue has been addressed in `node-forge` `1.3.0`.
+
+### References
+
+For more information, please see
+[&quot;Bleichenbacher's RSA signature forgery based on implementation error&quot;](https://mailarchive.ietf.org/arch/msg/openpgp/5rnE9ZRN1AokBVj3VqblGlP63QE/)
+by Hal Finney.
+
+### For more information
+
+If you have any questions or comments about this advisory:
+* Open an issue in [forge](https://github.com/digitalbazaar/forge)
+* Email us at [example email address](mailto:security@digitalbazaar.com)
+- https://github.com/digitalbazaar/forge/security/advisories/GHSA-x4jg-mjrx-434g
+- https://nvd.nist.gov/vuln/detail/CVE-2022-24772
+- https://github.com/digitalbazaar/forge/commit/3f0b49a0573ef1bb7af7f5673c0cfebf00424df1
+- https://github.com/digitalbazaar/forge/commit/bb822c02df0b61211836472e29b9790cc541cdb2
+- https://github.com/advisories/GHSA-x4jg-mjrx-434g" classname="node-forge@&lt;1.3.0 (high)"/>
+    <testcase name="Terser insecure use of regular expressions leads to ReDoS
+The package terser before 4.8.1, from 5.0.0 and before 5.14.2 are vulnerable to Regular Expression Denial of Service (ReDoS) due to insecure usage of regular expressions.
+- https://nvd.nist.gov/vuln/detail/CVE-2022-25858
+- https://github.com/terser/terser/commit/a4da7349fdc92c05094f41d33d06d8cd4e90e76b
+- https://github.com/terser/terser/commit/d8cc5691be980d663c29cc4d5ce67e852d597012
+- https://github.com/terser/terser/blob/master/lib/compress/evaluate.js%23L135
+- https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-2949722
+- https://snyk.io/vuln/SNYK-JS-TERSER-2806366
+- https://github.com/advisories/GHSA-4wf5-vphf-c2xc" classname="terser@&gt;=5.0.0 &lt;5.14.2 (high)"/>
+    <testcase name="Terser insecure use of regular expressions leads to ReDoS
+The package terser before 4.8.1, from 5.0.0 and before 5.14.2 are vulnerable to Regular Expression Denial of Service (ReDoS) due to insecure usage of regular expressions.
+- https://nvd.nist.gov/vuln/detail/CVE-2022-25858
+- https://github.com/terser/terser/commit/a4da7349fdc92c05094f41d33d06d8cd4e90e76b
+- https://github.com/terser/terser/commit/d8cc5691be980d663c29cc4d5ce67e852d597012
+- https://github.com/terser/terser/blob/master/lib/compress/evaluate.js%23L135
+- https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-2949722
+- https://snyk.io/vuln/SNYK-JS-TERSER-2806366
+- https://github.com/advisories/GHSA-4wf5-vphf-c2xc" classname="terser@&lt;4.8.1 (high)"/>
+    <testcase name="Inefficient Regular Expression Complexity in validator.js
+validator.js prior to 13.7.0 is vulnerable to Inefficient Regular Expression Complexity
+- https://nvd.nist.gov/vuln/detail/CVE-2021-3765
+- https://github.com/validatorjs/validator.js/commit/496fc8b2a7f5997acaaec33cc44d0b8dba5fb5e1
+- https://huntr.dev/bounties/c37e975c-21a3-4c5f-9b57-04d63b28cfc9
+- https://github.com/advisories/GHSA-qgmg-gppg-76g5" classname="validator@&lt;13.7.0 (moderate)"/>
+    <testcase name="tough-cookie Prototype Pollution vulnerability
+Versions of the package tough-cookie before 4.1.3 are vulnerable to Prototype Pollution due to improper handling of Cookies when using CookieJar in `rejectPublicSuffixes=false` mode. This issue arises from the manner in which the objects are initialized.
+- https://nvd.nist.gov/vuln/detail/CVE-2023-26136
+- https://github.com/salesforce/tough-cookie/issues/282
+- https://github.com/salesforce/tough-cookie/commit/12d474791bb856004e858fdb1c47b7608d09cf6e
+- https://github.com/salesforce/tough-cookie/releases/tag/v4.1.3
+- https://security.snyk.io/vuln/SNYK-JS-TOUGHCOOKIE-5672873
+- https://lists.debian.org/debian-lts-announce/2023/07/msg00010.html
+- https://github.com/advisories/GHSA-72xf-g2v4-qvf3" classname="tough-cookie@&lt;4.1.3 (moderate)"/>
+    <testcase name="jsonwebtoken vulnerable to signature validation bypass due to insecure default algorithm in jwt.verify()
+# Overview
+
+In versions &lt;=8.5.1 of jsonwebtoken library, lack of algorithm definition and a falsy secret or key in the `jwt.verify()` function can lead to signature validation bypass due to defaulting to the `none` algorithm for signature verification.
+
+# Am I affected?
+You will be affected if all the following are true in the `jwt.verify()` function:
+- a token with no signature is received
+- no algorithms are specified 
+- a falsy (e.g. null, false, undefined) secret or key is passed 
+
+# How do I fix it?
+ 
+Update to version 9.0.0 which removes the default support for the none algorithm in the `jwt.verify()` method. 
+
+# Will the fix impact my users?
+
+There will be no impact, if you update to version 9.0.0 and you don’t need to allow for the `none` algorithm. If you need 'none' algorithm, you have to explicitly specify that in `jwt.verify()` options.
+
+- https://github.com/auth0/node-jsonwebtoken/security/advisories/GHSA-qwph-4952-7xr6
+- https://github.com/auth0/node-jsonwebtoken/commit/e1fa9dcc12054a8681db4e6373da1b30cf7016e3
+- https://nvd.nist.gov/vuln/detail/CVE-2022-23540
+- https://github.com/advisories/GHSA-qwph-4952-7xr6" classname="jsonwebtoken@&lt;9.0.0 (moderate)"/>
+    <testcase name="Server-Side Request Forgery in Request
+The `request` package through 2.88.2 for Node.js and the `@cypress/request` package prior to 3.0.0 allow a bypass of SSRF mitigations via an attacker-controller server that does a cross-protocol redirect (HTTP to HTTPS, or HTTPS to HTTP).
+
+NOTE: The `request` package is no longer supported by the maintainer.
+- https://nvd.nist.gov/vuln/detail/CVE-2023-28155
+- https://github.com/request/request/issues/3442
+- https://github.com/request/request/pull/3444
+- https://doyensec.com/resources/Doyensec_Advisory_RequestSSRF_Q12023.pdf
+- https://security.netapp.com/advisory/ntap-20230413-0007/
+- https://github.com/github/advisory-database/pull/2500
+- https://github.com/cypress-io/request/blob/master/lib/redirect.js#L116
+- https://github.com/request/request/blob/master/lib/redirect.js#L111
+- https://github.com/cypress-io/request/pull/28
+- https://github.com/cypress-io/request/commit/c5bcf21d40fb61feaff21a0e5a2b3934a440024f
+- https://github.com/cypress-io/request/releases/tag/v3.0.0
+- https://github.com/advisories/GHSA-p8p7-x288-28g6" classname="@cypress/request@&lt;=2.88.12 (moderate)"/>
+    <testcase name="Server-Side Request Forgery in Request
+The `request` package through 2.88.2 for Node.js and the `@cypress/request` package prior to 3.0.0 allow a bypass of SSRF mitigations via an attacker-controller server that does a cross-protocol redirect (HTTP to HTTPS, or HTTPS to HTTP).
+
+NOTE: The `request` package is no longer supported by the maintainer.
+- https://nvd.nist.gov/vuln/detail/CVE-2023-28155
+- https://github.com/request/request/issues/3442
+- https://github.com/request/request/pull/3444
+- https://doyensec.com/resources/Doyensec_Advisory_RequestSSRF_Q12023.pdf
+- https://security.netapp.com/advisory/ntap-20230413-0007/
+- https://github.com/github/advisory-database/pull/2500
+- https://github.com/cypress-io/request/blob/master/lib/redirect.js#L116
+- https://github.com/request/request/blob/master/lib/redirect.js#L111
+- https://github.com/cypress-io/request/pull/28
+- https://github.com/cypress-io/request/commit/c5bcf21d40fb61feaff21a0e5a2b3934a440024f
+- https://github.com/cypress-io/request/releases/tag/v3.0.0
+- https://github.com/advisories/GHSA-p8p7-x288-28g6" classname="request@&lt;=2.88.2 (moderate)"/>
+    <testcase name="loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS) via url variable
+A Regular expression denial of service (ReDoS) flaw was found in Function interpolateName in interpolateName.js in webpack loader-utils 2.0.0 via the url variable in interpolateName.js. A badly or maliciously formed string could be used to send crafted requests that cause a system to crash or take a disproportional amount of time to process. This issue has been patched in versions 1.4.2, 2.0.4 and 3.2.1.
+- https://nvd.nist.gov/vuln/detail/CVE-2022-37603
+- https://github.com/webpack/loader-utils/issues/213
+- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L107
+- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L38
+- https://github.com/webpack/loader-utils/issues/216
+- https://github.com/webpack/loader-utils/commit/17cbf8fa8989c1cb45bdd2997aa524729475f1fa
+- https://github.com/webpack/loader-utils/commit/ac09944dfacd7c4497ef692894b09e63e09a5eeb
+- https://github.com/webpack/loader-utils/commit/d2d752d59629daee38f34b24307221349c490eb1
+- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ERN6YE3DS7NBW7UH44SCJBMNC2NWQ7SM/
+- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KAC5KQ2SEWAMQ6UZAUBZ5KXKEOESH375/
+- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VNV2GNZXOTEDAJRFH3ZYWRUBGIVL7BSU/
+- https://github.com/advisories/GHSA-3rfm-jhwj-7488" classname="loader-utils@&gt;=2.0.0 &lt;2.0.4 (high)"/>
+    <testcase name="loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS) via url variable
+A Regular expression denial of service (ReDoS) flaw was found in Function interpolateName in interpolateName.js in webpack loader-utils 2.0.0 via the url variable in interpolateName.js. A badly or maliciously formed string could be used to send crafted requests that cause a system to crash or take a disproportional amount of time to process. This issue has been patched in versions 1.4.2, 2.0.4 and 3.2.1.
+- https://nvd.nist.gov/vuln/detail/CVE-2022-37603
+- https://github.com/webpack/loader-utils/issues/213
+- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L107
+- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L38
+- https://github.com/webpack/loader-utils/issues/216
+- https://github.com/webpack/loader-utils/commit/17cbf8fa8989c1cb45bdd2997aa524729475f1fa
+- https://github.com/webpack/loader-utils/commit/ac09944dfacd7c4497ef692894b09e63e09a5eeb
+- https://github.com/webpack/loader-utils/commit/d2d752d59629daee38f34b24307221349c490eb1
+- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ERN6YE3DS7NBW7UH44SCJBMNC2NWQ7SM/
+- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KAC5KQ2SEWAMQ6UZAUBZ5KXKEOESH375/
+- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VNV2GNZXOTEDAJRFH3ZYWRUBGIVL7BSU/
+- https://github.com/advisories/GHSA-3rfm-jhwj-7488" classname="loader-utils@&gt;=1.0.0 &lt;1.4.2 (high)"/>
+    <testcase name="semver vulnerable to Regular Expression Denial of Service
+Versions of the package semver before 7.5.2 on the 7.x branch, before 6.3.1 on the 6.x branch, and all other versions before 5.7.2 are vulnerable to Regular Expression Denial of Service (ReDoS) via the function new Range, when untrusted user data is provided as a range.
+- https://nvd.nist.gov/vuln/detail/CVE-2022-25883
+- https://github.com/npm/node-semver/pull/564
+- https://github.com/npm/node-semver/commit/717534ee353682f3bcf33e60a8af4292626d4441
+- https://security.snyk.io/vuln/SNYK-JS-SEMVER-3247795
+- https://github.com/npm/node-semver/blob/main/classes/range.js#L97-L104
+- https://github.com/npm/node-semver/blob/main/internal/re.js#L138
+- https://github.com/npm/node-semver/blob/main/internal/re.js#L160
+- https://github.com/npm/node-semver/pull/585
+- https://github.com/npm/node-semver/commit/928e56d21150da0413a3333a3148b20e741a920c
+- https://github.com/npm/node-semver/pull/593
+- https://github.com/npm/node-semver/commit/2f8fd41487acf380194579ecb6f8b1bbfe116be0
+- https://github.com/advisories/GHSA-c2qf-rxjj-qqgw" classname="semver@&lt;5.7.2 (moderate)"/>
+    <testcase name="semver vulnerable to Regular Expression Denial of Service
+Versions of the package semver before 7.5.2 on the 7.x branch, before 6.3.1 on the 6.x branch, and all other versions before 5.7.2 are vulnerable to Regular Expression Denial of Service (ReDoS) via the function new Range, when untrusted user data is provided as a range.
+- https://nvd.nist.gov/vuln/detail/CVE-2022-25883
+- https://github.com/npm/node-semver/pull/564
+- https://github.com/npm/node-semver/commit/717534ee353682f3bcf33e60a8af4292626d4441
+- https://security.snyk.io/vuln/SNYK-JS-SEMVER-3247795
+- https://github.com/npm/node-semver/blob/main/classes/range.js#L97-L104
+- https://github.com/npm/node-semver/blob/main/internal/re.js#L138
+- https://github.com/npm/node-semver/blob/main/internal/re.js#L160
+- https://github.com/npm/node-semver/pull/585
+- https://github.com/npm/node-semver/commit/928e56d21150da0413a3333a3148b20e741a920c
+- https://github.com/npm/node-semver/pull/593
+- https://github.com/npm/node-semver/commit/2f8fd41487acf380194579ecb6f8b1bbfe116be0
+- https://github.com/advisories/GHSA-c2qf-rxjj-qqgw" classname="semver@&gt;=6.0.0 &lt;6.3.1 (moderate)"/>
+    <testcase name="semver vulnerable to Regular Expression Denial of Service
+Versions of the package semver before 7.5.2 on the 7.x branch, before 6.3.1 on the 6.x branch, and all other versions before 5.7.2 are vulnerable to Regular Expression Denial of Service (ReDoS) via the function new Range, when untrusted user data is provided as a range.
+- https://nvd.nist.gov/vuln/detail/CVE-2022-25883
+- https://github.com/npm/node-semver/pull/564
+- https://github.com/npm/node-semver/commit/717534ee353682f3bcf33e60a8af4292626d4441
+- https://security.snyk.io/vuln/SNYK-JS-SEMVER-3247795
+- https://github.com/npm/node-semver/blob/main/classes/range.js#L97-L104
+- https://github.com/npm/node-semver/blob/main/internal/re.js#L138
+- https://github.com/npm/node-semver/blob/main/internal/re.js#L160
+- https://github.com/npm/node-semver/pull/585
+- https://github.com/npm/node-semver/commit/928e56d21150da0413a3333a3148b20e741a920c
+- https://github.com/npm/node-semver/pull/593
+- https://github.com/npm/node-semver/commit/2f8fd41487acf380194579ecb6f8b1bbfe116be0
+- https://github.com/advisories/GHSA-c2qf-rxjj-qqgw" classname="semver@&gt;=7.0.0 &lt;7.5.2 (moderate)"/>
+    <testcase name="Prototype Pollution in JSON5 via Parse Method
+The `parse` method of the JSON5 library before and including version `2.2.1` does not restrict parsing of keys named `__proto__`, allowing specially crafted strings to pollute the prototype of the resulting object.
+
+This vulnerability pollutes the prototype of the object returned by `JSON5.parse` and not the global Object prototype, which is the commonly understood definition of Prototype Pollution. However, polluting the prototype of a single object can have significant security impact for an application if the object is later used in trusted operations.
+
+## Impact
+This vulnerability could allow an attacker to set arbitrary and unexpected keys on the object returned from `JSON5.parse`. The actual impact will depend on how applications utilize the returned object and how they filter unwanted keys, but could include denial of service, cross-site scripting, elevation of privilege, and in extreme cases, remote code execution.
+
+## Mitigation
+This vulnerability is patched in json5 v2.2.2 and later. A patch has also been backported for json5 v1 in versions v1.0.2 and later.
+
+## Details
+ 
+Suppose a developer wants to allow users and admins to perform some risky operation, but they want to restrict what non-admins can do. To accomplish this, they accept a JSON blob from the user, parse it using `JSON5.parse`, confirm that the provided data does not set some sensitive keys, and then performs the risky operation using the validated data:
+ 
+```js
+const JSON5 = require('json5');
+
+const doSomethingDangerous = (props) =&gt; {
+  if (props.isAdmin) {
+    console.log('Doing dangerous thing as admin.');
+  } else {
+    console.log('Doing dangerous thing as user.');
+  }
+};
+
+const secCheckKeysSet = (obj, searchKeys) =&gt; {
+  let searchKeyFound = false;
+  Object.keys(obj).forEach((key) =&gt; {
+    if (searchKeys.indexOf(key) &gt; -1) {
+      searchKeyFound = true;
+    }
+  });
+  return searchKeyFound;
+};
+
+const props = JSON5.parse('{&quot;foo&quot;: &quot;bar&quot;}');
+if (!secCheckKeysSet(props, ['isAdmin', 'isMod'])) {
+  doSomethingDangerous(props); // &quot;Doing dangerous thing as user.&quot;
+} else {
+  throw new Error('Forbidden...');
+}
+```
+ 
+If the user attempts to set the `isAdmin` key, their request will be rejected:
+ 
+```js
+const props = JSON5.parse('{&quot;foo&quot;: &quot;bar&quot;, &quot;isAdmin&quot;: true}');
+if (!secCheckKeysSet(props, ['isAdmin', 'isMod'])) {
+  doSomethingDangerous(props);
+} else {
+  throw new Error('Forbidden...'); // Error: Forbidden...
+}
+```
+ 
+However, users can instead set the `__proto__` key to `{&quot;isAdmin&quot;: true}`. `JSON5` will parse this key and will set the `isAdmin` key on the prototype of the returned object, allowing the user to bypass the security check and run their request as an admin:
+ 
+```js
+const props = JSON5.parse('{&quot;foo&quot;: &quot;bar&quot;, &quot;__proto__&quot;: {&quot;isAdmin&quot;: true}}');
+if (!secCheckKeysSet(props, ['isAdmin', 'isMod'])) {
+  doSomethingDangerous(props); // &quot;Doing dangerous thing as admin.&quot;
+} else {
+  throw new Error('Forbidden...');
+}
+ ```
+- https://github.com/json5/json5/security/advisories/GHSA-9c47-m6qq-7p4h
+- https://nvd.nist.gov/vuln/detail/CVE-2022-46175
+- https://github.com/json5/json5/issues/199
+- https://github.com/json5/json5/issues/295
+- https://github.com/json5/json5/pull/298
+- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3S26TLPLVFAJTUN3VIXFDEBEXDYO22CE/
+- https://github.com/json5/json5/commit/62a65408408d40aeea14c7869ed327acead12972
+- https://github.com/json5/json5/commit/7774c1097993bc3ce9f0ac4b722a32bf7d6871c8
+- https://github.com/advisories/GHSA-9c47-m6qq-7p4h" classname="json5@&lt;1.0.2 (high)"/>
+    <testcase name="Open Redirect in node-forge
+parseUrl functionality in node-forge mishandles certain uses of backslash such as `https:/\/\/\` and interprets the URI as a relative path. 
+- https://nvd.nist.gov/vuln/detail/CVE-2022-0122
+- https://github.com/digitalbazaar/forge/commit/db8016c805371e72b06d8e2edfe0ace0df934a5e
+- https://huntr.dev/bounties/41852c50-3c6d-4703-8c55-4db27164a4ae
+- https://github.com/advisories/GHSA-8fr3-hfg3-gpgp" classname="node-forge@&lt;1.0.0 (moderate)"/>
+    <testcase name="minimatch ReDoS vulnerability
+A vulnerability was found in the minimatch package. This flaw allows a Regular Expression Denial of Service (ReDoS) when calling the braceExpand function with specific arguments, resulting in a Denial of Service.
+- https://nvd.nist.gov/vuln/detail/CVE-2022-3517
+- https://github.com/grafana/grafana-image-renderer/issues/329
+- https://github.com/isaacs/minimatch/commit/a8763f4388e51956be62dc6025cec1126beeb5e6
+- https://github.com/nodejs/node/issues/42510
+- https://lists.debian.org/debian-lts-announce/2023/01/msg00011.html
+- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MTEUUTNIEBHGKUKKLNUZSV7IEP6IP3Q3/
+- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UM6XJ73Q3NAM5KSGCOKJ2ZIA6GUWUJLK/
+- https://github.com/advisories/GHSA-f8q6-p94x-37v3" classname="minimatch@&lt;3.0.5 (high)"/>
+    <testcase name="loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS)
+A regular expression denial of service (ReDoS) flaw was found in Function interpolateName in interpolateName.js in webpack loader-utils via the resourcePath variable in interpolateName.js. A badly or maliciously formed string could be used to send crafted requests that cause a system to crash or take a disproportional amount of time to process. This issue has been patched in versions 1.4.2, 2.0.4 and 3.2.1.
+- https://nvd.nist.gov/vuln/detail/CVE-2022-37599
+- https://github.com/webpack/loader-utils/issues/211
+- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L38
+- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L83
+- https://github.com/webpack/loader-utils/issues/216
+- https://github.com/webpack/loader-utils/commit/17cbf8fa8989c1cb45bdd2997aa524729475f1fa
+- https://github.com/webpack/loader-utils/commit/ac09944dfacd7c4497ef692894b09e63e09a5eeb
+- https://github.com/webpack/loader-utils/commit/d2d752d59629daee38f34b24307221349c490eb1
+- https://github.com/advisories/GHSA-hhq3-ff78-jv3g" classname="loader-utils@&gt;=2.0.0 &lt;2.0.4 (high)"/>
+    <testcase name="loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS)
+A regular expression denial of service (ReDoS) flaw was found in Function interpolateName in interpolateName.js in webpack loader-utils via the resourcePath variable in interpolateName.js. A badly or maliciously formed string could be used to send crafted requests that cause a system to crash or take a disproportional amount of time to process. This issue has been patched in versions 1.4.2, 2.0.4 and 3.2.1.
+- https://nvd.nist.gov/vuln/detail/CVE-2022-37599
+- https://github.com/webpack/loader-utils/issues/211
+- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L38
+- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L83
+- https://github.com/webpack/loader-utils/issues/216
+- https://github.com/webpack/loader-utils/commit/17cbf8fa8989c1cb45bdd2997aa524729475f1fa
+- https://github.com/webpack/loader-utils/commit/ac09944dfacd7c4497ef692894b09e63e09a5eeb
+- https://github.com/webpack/loader-utils/commit/d2d752d59629daee38f34b24307221349c490eb1
+- https://github.com/advisories/GHSA-hhq3-ff78-jv3g" classname="loader-utils@&gt;=1.0.0 &lt;1.4.2 (high)"/>
+    <testcase name="decode-uri-component vulnerable to Denial of Service (DoS)
+decode-uri-component 0.2.0 is vulnerable to Improper Input Validation resulting in DoS.
+- https://nvd.nist.gov/vuln/detail/CVE-2022-38900
+- https://github.com/SamVerschueren/decode-uri-component/issues/5
+- https://github.com/sindresorhus/query-string/issues/345
+- https://github.com/SamVerschueren/decode-uri-component/commit/746ca5dcb6667c5d364e782d53c542830e4c10b9
+- https://github.com/SamVerschueren/decode-uri-component/releases/tag/v0.2.1
+- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ERN6YE3DS7NBW7UH44SCJBMNC2NWQ7SM/
+- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KAC5KQ2SEWAMQ6UZAUBZ5KXKEOESH375/
+- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VNV2GNZXOTEDAJRFH3ZYWRUBGIVL7BSU/
+- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QABOUA2I542UTANVZIVFKWMRYVHLV32D/
+- https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UW4SCMT3SEUFVIL7YIADQ5K36GJEO6I5/
+- https://github.com/advisories/GHSA-w573-4hg7-7wgq" classname="decode-uri-component@&lt;0.2.1 (high)"/>
+    <testcase name="Prototype pollution in webpack loader-utils
+Prototype pollution vulnerability in function parseQuery in parseQuery.js in webpack loader-utils prior to version 2.0.3 via the name variable in parseQuery.js.
+- https://nvd.nist.gov/vuln/detail/CVE-2022-37601
+- https://github.com/webpack/loader-utils/issues/212
+- https://github.com/webpack/loader-utils/releases/tag/v2.0.3
+- https://github.com/webpack/loader-utils/pull/217
+- https://github.com/webpack/loader-utils/pull/220
+- https://github.com/webpack/loader-utils/releases/tag/v1.4.1
+- https://github.com/webpack/loader-utils/issues/212#issuecomment-1319192884
+- https://github.com/xmldom/xmldom/issues/436#issuecomment-1319412826
+- https://dl.acm.org/doi/abs/10.1145/3488932.3497769
+- https://dl.acm.org/doi/pdf/10.1145/3488932.3497769
+- https://lists.debian.org/debian-lts-announce/2022/12/msg00044.html
+- http://users.encs.concordia.ca/~mmannan/publications/JS-vulnerability-aisaccs2022.pdf
+- https://github.com/webpack/loader-utils/commit/f4e48a232fae900237c3e5ff7b57ce9e1c734de1
+- https://github.com/webpack/loader-utils/commit/4504e34c4796a5836ef70458327351675aed48a5
+- https://github.com/webpack/loader-utils/commit/a93cf6f4702012030f6b5ee8340d5c95ec1c7d4c
+- https://github.com/advisories/GHSA-76p3-8jx3-jpfq" classname="loader-utils@&lt;1.4.1 (critical)">
+      <failure message="Prototype pollution in webpack loader-utils - 1.4.0 - @angular-devkit/build-angular&gt;babel-loader&gt;loader-utils" type="error">Prototype pollution vulnerability in function parseQuery in parseQuery.js in webpack loader-utils prior to version 2.0.3 via the name variable in parseQuery.js.</failure>
+    </testcase>
+    <testcase name="Prototype pollution in webpack loader-utils
+Prototype pollution vulnerability in function parseQuery in parseQuery.js in webpack loader-utils prior to version 2.0.3 via the name variable in parseQuery.js.
+- https://nvd.nist.gov/vuln/detail/CVE-2022-37601
+- https://github.com/webpack/loader-utils/issues/212
+- https://github.com/webpack/loader-utils/releases/tag/v2.0.3
+- https://github.com/webpack/loader-utils/pull/217
+- https://github.com/webpack/loader-utils/pull/220
+- https://github.com/webpack/loader-utils/releases/tag/v1.4.1
+- https://github.com/webpack/loader-utils/issues/212#issuecomment-1319192884
+- https://github.com/xmldom/xmldom/issues/436#issuecomment-1319412826
+- https://dl.acm.org/doi/abs/10.1145/3488932.3497769
+- https://dl.acm.org/doi/pdf/10.1145/3488932.3497769
+- https://lists.debian.org/debian-lts-announce/2022/12/msg00044.html
+- http://users.encs.concordia.ca/~mmannan/publications/JS-vulnerability-aisaccs2022.pdf
+- https://github.com/webpack/loader-utils/commit/f4e48a232fae900237c3e5ff7b57ce9e1c734de1
+- https://github.com/webpack/loader-utils/commit/4504e34c4796a5836ef70458327351675aed48a5
+- https://github.com/webpack/loader-utils/commit/a93cf6f4702012030f6b5ee8340d5c95ec1c7d4c
+- https://github.com/advisories/GHSA-76p3-8jx3-jpfq" classname="loader-utils@&gt;=2.0.0 &lt;2.0.3 (critical)">
+      <failure message="Prototype pollution in webpack loader-utils - 2.0.0 - @angular-devkit/build-angular&gt;@angular-devkit/build-optimizer&gt;loader-utils" type="error">Prototype pollution vulnerability in function parseQuery in parseQuery.js in webpack loader-utils prior to version 2.0.3 via the name variable in parseQuery.js.</failure>
+    </testcase>
+    <testcase name="Inefficient Regular Expression Complexity in chalk/ansi-regex
+ansi-regex is vulnerable to Inefficient Regular Expression Complexity which could lead to a denial of service when parsing invalid ANSI escape codes.
+
+**Proof of Concept**
+```js
+import ansiRegex from 'ansi-regex';
+for(var i = 1; i &lt;= 50000; i++) {
+    var time = Date.now();
+    var attack_str = &quot;\u001B[&quot;+&quot;;&quot;.repeat(i*10000);
+    ansiRegex().test(attack_str)
+    var time_cost = Date.now() - time;
+    console.log(&quot;attack_str.length: &quot; + attack_str.length + &quot;: &quot; + time_cost+&quot; ms&quot;)
+}
+```
+The ReDOS is mainly due to the sub-patterns `[[\\]()#;?]*` and `(?:;[-a-zA-Z\\d\\/#&amp;.:=?%@~_]*)*`
+- https://nvd.nist.gov/vuln/detail/CVE-2021-3807
+- https://github.com/chalk/ansi-regex/commit/8d1d7cdb586269882c4bdc1b7325d0c58c8f76f9
+- https://huntr.dev/bounties/5b3cf33b-ede0-4398-9974-800876dfd994
+- https://github.com/chalk/ansi-regex/issues/38#issuecomment-924086311
+- https://app.snyk.io/vuln/SNYK-JS-ANSIREGEX-1583908
+- https://github.com/chalk/ansi-regex/issues/38#issuecomment-925924774
+- https://github.com/chalk/ansi-regex/releases/tag/v6.0.1
+- https://www.oracle.com/security-alerts/cpuapr2022.html
+- https://security.netapp.com/advisory/ntap-20221014-0002/
+- https://github.com/chalk/ansi-regex/commit/419250fa510bf31b4cc672e76537a64f9332e1f1
+- https://github.com/chalk/ansi-regex/commit/75a657da7af875b2e2724fd6331bf0a4b23d3c9a
+- https://github.com/chalk/ansi-regex/commit/c3c0b3f2736b9c01feec0fef33980c43720dcde8
+- https://github.com/advisories/GHSA-93q8-gq69-wqmw" classname="ansi-regex@&gt;=3.0.0 &lt;3.0.1 (high)"/>
+    <testcase name="Cross site scripting in Angular
+A vulnerability was found in Angular up to 11.0.4/11.1.0-next.2. It has been classified as problematic. Affected is the handling of comments. The manipulation leads to cross site scripting. It is possible to launch the attack remotely but it might require an authentication first. Upgrading to version 10.2.5, 11.0.5 or 11.1.0-next.3 is advised to to address this issue.
+- https://nvd.nist.gov/vuln/detail/CVE-2021-4231
+- https://github.com/angular/angular/issues/40136
+- https://github.com/angular/angular/commit/ba8da742e3b243e8f43d4c63aa842b44e14f2b09
+- https://security.snyk.io/vuln/SNYK-JS-ANGULARCORE-1070902
+- https://vuldb.com/?id.181356
+- https://github.com/angular/angular/commit/0aa220bc0000fc4d1651ec388975bbf5baa1da36
+- https://github.com/angular/angular/commit/47d9b6d72dab9d60c96bc1c3604219f6385649ea
+- https://github.com/advisories/GHSA-c75v-2vq8-878f" classname="@angular/core@&lt;10.2.5 (moderate)"/>
+    <testcase name="PostCSS line return parsing error
+An issue was discovered in PostCSS before 8.4.31. It affects linters using PostCSS to parse external Cascading Style Sheets (CSS). There may be `\r` discrepancies, as demonstrated by `@font-face{ font:(\r/*);}` in a rule.
+
+This vulnerability affects linters using PostCSS to parse external untrusted CSS. An attacker can prepare CSS in such a way that it will contains parts parsed by PostCSS as a CSS comment. After processing by PostCSS, it will be included in the PostCSS output in CSS nodes (rules, properties) despite being originally included in a comment.
+- https://nvd.nist.gov/vuln/detail/CVE-2023-44270
+- https://github.com/postcss/postcss/commit/58cc860b4c1707510c9cd1bc1fa30b423a9ad6c5
+- https://github.com/postcss/postcss/blob/main/lib/tokenize.js#L25
+- https://github.com/postcss/postcss/releases/tag/8.4.31
+- https://github.com/github/advisory-database/issues/2820
+- https://github.com/advisories/GHSA-7fh5-64p2-3v2j" classname="postcss@&lt;8.4.31 (moderate)"/>
+  </testsuite>
+</testsuites>

@@ -7,10 +7,11 @@
     "npm-audit-plus-plus": "dist/cli.js"
   },
   "scripts": {
-    "test": "cat fixtures/audit.json | node dist/cli.js",
-    "test-ok": "cat fixtures/audit-ok.json | node dist/cli.js",
-    "test-critical": "cat fixtures/audit-criticals.json | node dist/cli.js",
-    "test-v2": "cat fixtures/audit-v2.json | node dist/cli.js",
+    "test": "concurrently npm:test:*",
+    "test:plain": "cat fixtures/audit.json | node dist/cli.js > fixtures/audit.xml",
+    "test:ok": "cat fixtures/audit-ok.json | node dist/cli.js > fixtures/audit-ok.xml",
+    "test:critical": "cat fixtures/audit-criticals.json | node dist/cli.js > fixtures/audit-criticals.xml",
+    "test:v2": "cat fixtures/audit-v2.json | node dist/cli.js > fixtures/audit-v2.xml",
     "build": "tsc"
   },
   "keywords": [
@@ -36,6 +37,7 @@
     "@babel/core": "^7.23.2",
     "@babel/preset-env": "^7.23.2",
     "@types/node": "^20.8.10",
+    "concurrently": "^8.2.2",
     "typescript": "^5.2.2"
   },
   "repository": {
