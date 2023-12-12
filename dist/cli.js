@@ -193,13 +193,13 @@ var v2 = function (input) {
             ? {
                 "@message": input.vulnerabilities[vulnerability].name +
                     " - " +
-                    input.vulnerabilities[vulnerability].effect[0],
+                    (input.vulnerabilities[vulnerability].effect && input.vulnerabilities[vulnerability].effect.length > 0 ? input.vulnerabilities[vulnerability].effect[0] : input.vulnerabilities[vulnerability].via[0].title),
                 "@type": "error",
                 "#text": input.vulnerabilities[vulnerability].name +
                     " - " +
                     input.vulnerabilities[vulnerability].via[0].name +
                     " - " +
-                    input.vulnerabilities[vulnerability].effect[0] +
+                    (input.vulnerabilities[vulnerability].effect && input.vulnerabilities[vulnerability].effect.length > 0 ? input.vulnerabilities[vulnerability].effect[0] : input.vulnerabilities[vulnerability].via[0].title) +
                     "\n\nFix available:\n\n" +
                     input.vulnerabilities[vulnerability].fixAvailable.name +
                     "@" +

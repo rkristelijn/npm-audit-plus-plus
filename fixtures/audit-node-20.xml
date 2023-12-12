@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="NPM AUdit Summary v2" errors="1" failures="0" tests="1313">
+    <testcase classname="Summary" name="Critical: 1, High: 0, Moderate: 0, Low: 0, Info: 0, Dependencies: 1313" time="0"/>
+    <testcase classname="json-schema@&lt;0.4.0 (critical)" name="json-schema is vulnerable to Prototype Pollution
+https://github.com/advisories/GHSA-896r-f27r-55mwjson-schema" time="0">
+      <failure message="json-schema - json-schema is vulnerable to Prototype Pollution" type="error">json-schema - json-schema - json-schema is vulnerable to Prototype Pollution
+
+Fix available:
+
+json-schema@0.4.0</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

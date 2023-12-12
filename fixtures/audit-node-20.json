@@ -1,0 +1,57 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "json-schema": {
+      "name": "json-schema",
+      "severity": "critical",
+      "isDirect": true,
+      "via": [
+        {
+          "source": 1095057,
+          "name": "json-schema",
+          "dependency": "json-schema",
+          "title": "json-schema is vulnerable to Prototype Pollution",
+          "url": "https://github.com/advisories/GHSA-896r-f27r-55mw",
+          "severity": "critical",
+          "cwe": [
+            "CWE-915",
+            "CWE-1321"
+          ],
+          "cvss": {
+            "score": 9.8,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+          },
+          "range": "<0.4.0"
+        }
+      ],
+      "effects": [],
+      "range": "<0.4.0",
+      "nodes": [
+        "node_modules/json-schema"
+      ],
+      "fixAvailable": {
+        "name": "json-schema",
+        "version": "0.4.0",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 1,
+      "total": 1
+    },
+    "dependencies": {
+      "prod": 127,
+      "dev": 1187,
+      "optional": 48,
+      "peer": 42,
+      "peerOptional": 0,
+      "total": 1313
+    }
+  }
+}
