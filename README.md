@@ -30,3 +30,7 @@ Instead of npx you could use `npm i -D npm-audit-plus-plus@latest -f` to force t
 
 - [JUnit XML format](https://www.ibm.com/docs/en/developer-for-zos/14.1?topic=formats-junit-xml-format)
 - [Gitlab JUnit parser info](https://gitlab.com/gitlab-org/gitlab/-/issues/299086)
+
+## Sponsor me
+
+[Sponsor me](https://github.com/sponsors/rkristelijn/) if you appreciate my work.
