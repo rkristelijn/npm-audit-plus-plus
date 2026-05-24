@@ -1,6 +1,11 @@
-# NPM Audit Plus Plus
+# npm-audit-plus-plus
 
-This is a tool to help report `npm audit` in xml format for e.g. CI/CD for gitlab.
+![CI](https://github.com/rkristelijn/npm-audit-plus-plus/actions/workflows/ci.yml/badge.svg)
+[![npm version](https://img.shields.io/npm/v/npm-audit-plus-plus)](https://www.npmjs.com/package/npm-audit-plus-plus)
+[![npm downloads](https://img.shields.io/npm/dm/npm-audit-plus-plus)](https://www.npmjs.com/package/npm-audit-plus-plus)
+![license](https://img.shields.io/badge/license-MIT-green)
+
+A tool to convert `npm audit` JSON output to JUnit XML for CI/CD pipelines (GitLab, Jenkins, etc.).
 
 ```
 npm audit --json | npx npm-audit-plus-plus > npm-audit-plus-plus.xml
