@@ -7,7 +7,7 @@
 
 A tool to convert `npm audit` JSON output to JUnit XML for CI/CD pipelines (GitLab, Jenkins, etc.).
 
-```
+```text
 npm audit --json | npx npm-audit-plus-plus > npm-audit-plus-plus.xml
 npm audit --production --json | npx npm-audit-plus-plus > npm-audit-plus-plus.xml
 npm audit --omit=dev --json | npx npm-audit-plus-plus > npm-audit-plus-plus.xml
@@ -28,6 +28,7 @@ Instead of npx you could use `npm i -D npm-audit-plus-plus@latest -f` to force t
 ```
 
 ## Developing
+
 - `npm i` - to install dependencies
 - `npm t` - to parse all json files in `test/fixtures`. See if the changes are still valid.
 
